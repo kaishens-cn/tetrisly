@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "./dist/",
+    "moduleResolution": "Node",
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "module": "CommonJS",
+    "target": "ES5",
+    "jsx": "react",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "paths": {
+//      "@/*": ["./*"]
+    }
+  },
+  "include": [
+    "./src",
+    "./__test__"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}
