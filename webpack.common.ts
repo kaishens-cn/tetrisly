@@ -1,8 +1,9 @@
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import * as path from 'path';
 import * as webpack from 'webpack';
 
 const config: webpack.Configuration = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   mode: 'development',
   optimization: {
     usedExports: true,
@@ -34,7 +35,7 @@ const config: webpack.Configuration = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
-  plugins: [],
+  plugins: [new CleanWebpackPlugin()],
 };
 
 export default config;

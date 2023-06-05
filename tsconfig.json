@@ -11,13 +11,16 @@
     "jsx": "react",
     "allowJs": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "paths": {
 //      "@/*": ["./*"]
     }
   },
   "include": [
     "./src",
-    "./__test__"
+    "./__test__",
+    "./example",
+    "webpack.dev.ts"
   ],
   "exclude": [
     "node_modules",
