@@ -2,7 +2,7 @@ import * as path from 'path';
 import * as webpack from 'webpack';
 
 const config: webpack.Configuration = {
-  entry: './src/index.tsx',
+  entry: './src/index.ts',
   mode: 'development',
   optimization: {
     usedExports: true,

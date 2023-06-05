@@ -6,3 +6,7 @@ interface TestProps {
 export const Test = (props: TestProps) => {
   return <div>{props.content}</div>;
 };
+
+import Icon from './components/icon';
+
+export { Icon };
