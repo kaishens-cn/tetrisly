@@ -1,0 +1,80 @@
+@import 'src/styles/elevation';
+@import 'src/styles/typography';
+
+@mixin elevationDiv() {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.elevation {
+  &-top {
+    &-100 {
+      @include elevationDiv;
+      @include elevation(top, 100);
+    }
+    &-200 {
+      @include elevationDiv;
+      @include elevation(top, 200);
+    }
+    &-300 {
+      @include elevationDiv;
+      @include elevation(top, 300);
+    }
+    &-400 {
+      @include elevationDiv;
+      @include elevation(top, 400);
+    }
+  }
+  &-bottom {
+    &-100 {
+      @include elevationDiv;
+      @include elevation(bottom, 100);
+    }
+    &-200 {
+      @include elevationDiv;
+      @include elevation(bottom, 200);
+    }
+    &-300 {
+      @include elevationDiv;
+      @include elevation(bottom, 300);
+    }
+    &-400 {
+      @include elevationDiv;
+      @include elevation(bottom, 400);
+    }
+  }
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+}
+
+.font {
+  &-strong-25 {
+    @include font(25, strong);
+  }
+  &-strong-50 {
+    @include font(50, strong);
+  }
+  &-strong-75 {
+    @include font(75, strong);
+  }
+  &-strong-100 {
+    @include font(100, strong);
+  }
+  &-strong-200 {
+    @include font(200, strong);
+  }
+  &-strong-300 {
+    @include font(300, strong);
+  }
+  &-strong-400 {
+    @include font(400, strong);
+  }
+  &-strong-500 {
+    @include font(500, strong);
+  }
+  &-strong-600 {
+    @include font(600, strong);
+  }
+}
