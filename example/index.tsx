@@ -3,7 +3,8 @@ import './index.scss';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { Icon } from '../src';
+import { Alert, Icon, Space } from '../src';
+import Typography from '../src/components/typography';
 
 const App = () => {
   return (
@@ -297,17 +298,15 @@ const App = () => {
         <div className="elevation-bottom-300" />
         <div className="elevation-bottom-400" />
       </div>
-      <div>
-        <div className="font-strong-25">The quick fox</div>
-        <div className="font-strong-50">The quick fox</div>
-        <div className="font-strong-75">The quick fox</div>
-        <div className="font-strong-100">The quick fox</div>
-        <div className="font-strong-200">The quick fox</div>
-        <div className="font-strong-300">The quick fox</div>
-        <div className="font-strong-400">The quick fox</div>
-        <div className="font-strong-500">The quick fox</div>
-        <div className="font-strong-600">The quick fox</div>
-      </div>
+      <Alert message="normal" closeable />
+      <Alert type="success" closeable message="success" actions={[{ text: 'action' }, { text: 'action' }]} />
+      <Alert type="warning" message="warning" closeable />
+      <Alert type="negative" message="error" closeable />
+      <Space gap={10} align="start" direction="vertical">
+        <Typography.Normal size={200}>666888</Typography.Normal>
+        <Typography.Normal>666888</Typography.Normal>
+        <Typography.Normal>666888</Typography.Normal>
+      </Space>
     </>
   );
 };

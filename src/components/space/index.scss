@@ -1,0 +1,10 @@
+.space {
+  display: inline-flex;
+  align-items: var(--align);
+  &-vertical {
+    flex-direction: column;
+  }
+  &-horizontal {
+    flex-direction: row;
+  }
+}
