@@ -4,6 +4,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { Alert, Icon, Space } from '../src';
+import Menu from '../src/components/menu';
 import Typography from '../src/components/typography';
 
 const App = () => {
@@ -307,6 +308,22 @@ const App = () => {
         <Typography.Normal>666888</Typography.Normal>
         <Typography.Normal>666888</Typography.Normal>
       </Space>
+      <br />
+      <Menu>
+        <Menu.Group icon={<Icon.Home />} title="Menu Text">
+          <Menu.Item title="aaa" />
+          <Menu.Item title="bbb" />
+          <Menu.Item title="ccc" />
+        </Menu.Group>
+        <Menu.Group title="title2">
+          <Menu.Item title="ddd" />
+          <Menu.Item title="eee" />
+          <Menu.Group title="title3">
+            <Menu.Item title="fff" />
+          </Menu.Group>
+        </Menu.Group>
+        <Menu.Group icon={<Icon.Home />} title="Menu Text4" />
+      </Menu>
     </>
   );
 };

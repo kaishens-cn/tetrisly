@@ -1,0 +1,30 @@
+@import 'src/styles/color.module';
+
+@mixin group() {
+  height: 40px;
+  width: 264px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.menu-group {
+  height: 40px;
+  width: 280px;
+  user-select: none;
+  &-main {
+    @include group;
+  }
+}
+
+.menu-item {
+  height: 32px;
+  width: 280px;
+  user-select: none;
+  &-main {
+    height: 32px;
+    width: 264px;
+    border-radius: 6px;
+    padding-left: 68px;
+    cursor: pointer;
+  }
+}

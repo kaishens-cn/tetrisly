@@ -558,6 +558,7 @@ $color-action-reverse-inverted-active: $color-neutral-alpha-0;
 $color-action-reverse-inverted-selected: $color-neutral-alpha--1;
 
 :export {
+  Transparent: $color-transparent;
   ContentPrimary: $color-content-primary;
   ContentSecondary: $color-content-secondary;
   ContentTertiary: $color-content-tertiary;

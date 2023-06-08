@@ -1,4 +1,5 @@
 export interface ColorScss {
+  Transparent: string;
   ContentPrimary: string;
   ContentSecondary: string;
   ContentTertiary: string;
