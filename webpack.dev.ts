@@ -7,7 +7,7 @@ import common from './webpack.common';
 const config = merge(common, {
   mode: 'development',
   devtool: 'source-map',
-  entry: './example/index.tsx',
+  entry: './example/main.tsx',
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),

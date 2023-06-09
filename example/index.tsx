@@ -3,13 +3,14 @@ import './index.scss';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
-import { Alert, Icon, Space } from '../src';
+import { Alert, Divider, Icon, Space } from '../src';
 import Menu from '../src/components/menu';
 import Typography from '../src/components/typography';
 
 const App = () => {
   return (
     <>
+      <Divider title="Icon" />
       <div
         style={{
           display: 'flex',
@@ -287,6 +288,7 @@ const App = () => {
         <Icon.WifiOff />
         <Icon.Wifi />
       </div>
+      <Divider title="Elevation" />
       <div style={{ padding: 20, display: 'flex', gap: 100 }}>
         <div className="elevation-top-100" />
         <div className="elevation-top-200" />
@@ -299,16 +301,18 @@ const App = () => {
         <div className="elevation-bottom-300" />
         <div className="elevation-bottom-400" />
       </div>
+      <Divider title="Alert" />
       <Alert message="normal" closeable />
       <Alert type="success" closeable message="success" actions={[{ text: 'action' }, { text: 'action' }]} />
       <Alert type="warning" message="warning" closeable />
       <Alert type="negative" message="error" closeable />
+      <Divider title="Typography" />
       <Space gap={10} align="start" direction="vertical">
         <Typography.Normal size={200}>666888</Typography.Normal>
         <Typography.Normal>666888</Typography.Normal>
         <Typography.Normal>666888</Typography.Normal>
       </Space>
-      <br />
+      <Divider title="Menu" />
       <Menu>
         <Menu.Group icon={<Icon.Home />} title="Menu Text">
           <Menu.Item title="aaa" />

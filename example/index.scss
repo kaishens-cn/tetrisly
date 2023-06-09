@@ -1,5 +1,14 @@
 @import 'src/styles/elevation';
-@import 'src/styles/typography';
+@import 'src/styles/color.module';
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 @mixin elevationDiv() {
   width: 72px;
@@ -47,4 +56,15 @@
   width: 72px;
   height: 72px;
   border-radius: 50%;
+}
+
+.component {
+  width: 280px;
+  height: 100%;
+  border-right: 1px solid $color-border-default;
+}
+
+.component-container {
+  padding: 20px;
+  border: 1px solid $color-border-default;
 }

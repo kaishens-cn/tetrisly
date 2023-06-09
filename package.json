@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "NODE_ENV=production webpack --config webpack.prod.ts",
-    "dev": "NODE_ENV=development webpack serve --config webpack.dev.ts",
+    "dev": "NODE_ENV=development webpack serve --history-api-fallback --config webpack.dev.ts",
     "lint": "eslint --ext .tsx --ext .ts ./ && prettier --check ./",
     "lint:fix": "eslint --ext .tsx --ext .ts ./ --fix && prettier --write ./"
   },
@@ -56,6 +56,7 @@
     "jotai": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.12.1",
     "react-use-measure": "^2.1.1"
   }
 }

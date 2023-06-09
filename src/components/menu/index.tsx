@@ -2,7 +2,7 @@ import './index.scss';
 
 import { animated, useSpring } from '@react-spring/web';
 import { atom, createStore, Provider, useAtom } from 'jotai';
-import React, { FC, PropsWithChildren, useEffect, useId, useState } from 'react';
+import React, { FC, PropsWithChildren, useEffect, useId, useImperativeHandle, useState } from 'react';
 import useMeasure from 'react-use-measure';
 
 import { Icon } from '../../index';
@@ -11,36 +11,43 @@ import { attachPropertiesToComponent } from '../../utils';
 import Column from '../column';
 import Row from '../row';
 import Space from '../space';
+import { TrteislyMenu } from '../type';
 import Typography from '../typography';
 
 const groupSelectKey = atom<string>('');
 const itemSelectKey = atom<string>('');
 
-const Menu: FC<PropsWithChildren> = props => {
+const Menu = React.forwardRef<TrteislyMenu, PropsWithChildren>((props, ref) => {
   const store = createStore();
-  store.set(groupSelectKey, '');
-  store.set(itemSelectKey, '');
+
+  useImperativeHandle(ref, () => ({
+    setSelected(key: string) {
+      store.set(groupSelectKey, key);
+      store.set(itemSelectKey, key);
+    },
+  }));
 
   return (
     <Provider store={store}>
-      <Space direction="vertical" gap={4}>
+      <Space direction="vertical" gap={4} align="unset">
         {props.children}
       </Space>
     </Provider>
   );
-};
+});
 
 interface MenuGroupProps {
   title: string;
   onClick?: () => void;
   defaultOpen?: boolean;
+  menuKey?: string;
   icon?: React.ReactElement<React.SVGAttributes<SVGElement>>;
 }
 
 export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
   const [selected, setSelected] = useAtom(groupSelectKey);
   const [_, setItemSelected] = useAtom(itemSelectKey);
-  const id = useId();
+  const id = props.menuKey || useId();
   const { defaultOpen = false } = props;
   const [ref, { height: viewHeight }] = useMeasure();
   const [open, setOpen] = useState(defaultOpen);
@@ -56,6 +63,7 @@ export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
   });
 
   useEffect(() => {
+    console.log(selected);
     if (selected !== id) {
       setBackground(undefined);
       setContentColor(colorConfig.ActionNeutralNormal);
@@ -149,13 +157,14 @@ export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
 interface MenuItemProps {
   title: string;
   groupKey?: string;
+  menuKey?: string;
   onClick?: () => void;
 }
 
 export const Item: FC<PropsWithChildren<MenuItemProps>> = props => {
   const [_, setGroupSelected] = useAtom(groupSelectKey);
   const [selected, setSelected] = useAtom(itemSelectKey);
-  const id = useId();
+  const id = props.menuKey || useId();
 
   const [background, setBackground] = useState<string>();
   const [contentColor, setContentColor] = useState<string>(colorConfig.ActionNeutralNormal);
@@ -164,6 +173,8 @@ export const Item: FC<PropsWithChildren<MenuItemProps>> = props => {
     if (selected !== id) {
       setBackground(undefined);
       setContentColor(colorConfig.ActionNeutralNormal);
+    } else {
+      setGroupSelected(props.groupKey);
     }
   }, [selected]);
 
@@ -190,7 +201,7 @@ export const Item: FC<PropsWithChildren<MenuItemProps>> = props => {
         }}
         onClick={() => {
           setSelected(id);
-          setGroupSelected(props.groupKey);
+          // setGroupSelected(props.groupKey);
           setBackground(colorConfig.ActionPrimarySubtleSelected);
           setContentColor(colorConfig.ActionPrimarySelected);
           props.onClick?.();
