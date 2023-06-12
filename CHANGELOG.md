@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/kaishens-cn/tetrisly/compare/v1.0.2...v1.0.3) (2023-06-12)
+
+
+### Styling
+
+* add .github, CHANGELOG.md into prettier and eslint config ([017d2c8](https://github.com/kaishens-cn/tetrisly/commit/017d2c8276116e3fa2f3961ad73e736d3fcdaa41))
+
 ## [1.0.2](https://github.com/kaishens-cn/tetrisly/compare/v1.0.1...v1.0.2) (2023-06-12)
 
 
