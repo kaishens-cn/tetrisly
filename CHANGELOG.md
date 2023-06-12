@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/kaishens-cn/tetrisly/compare/v1.0.0...v1.0.1) (2023-06-12)
+
+
+### CI
+
+* add pnpm-lock into git ([8afb440](https://github.com/kaishens-cn/tetrisly/commit/8afb440ed12011d3ca61605f3149de3638534671))
+
 ## 1.0.0 (2023-06-12)
 
 
