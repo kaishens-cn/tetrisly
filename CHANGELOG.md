@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/kaishens-cn/tetrisly/compare/v1.0.3...v1.0.4) (2023-06-12)
+
+
+### CI
+
+* packing components with gulp ([0be81f4](https://github.com/kaishens-cn/tetrisly/commit/0be81f4e730f76fa18c8f34688d4c20c905edba2))
+
 ## [1.0.3](https://github.com/kaishens-cn/tetrisly/compare/v1.0.2...v1.0.3) (2023-06-12)
 
 
