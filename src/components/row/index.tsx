@@ -1,7 +1,7 @@
 import { Property } from 'csstype';
 import React from 'react';
 
-interface RowProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface RowProps extends React.HTMLAttributes<HTMLDivElement> {
   align?: Property.AlignItems;
   justify?: Property.JustifyContent;
   reverse?: boolean;

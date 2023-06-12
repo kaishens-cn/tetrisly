@@ -1,10 +1,10 @@
-import './style/index.scss';
+import { Property } from 'csstype';
+import React from 'react';
 
-import classNames from 'classnames';
-import React, { FC, PropsWithChildren } from 'react';
+import { SpaceContainer } from './style';
 
 interface SpaceProps extends React.HTMLAttributes<HTMLDivElement> {
-  align?: 'start' | 'end' | 'center' | 'unset';
+  align?: Property.AlignItems;
   direction?: 'vertical' | 'horizontal';
   gap?: number;
   split?: React.ReactNode;
@@ -15,9 +15,10 @@ const Space = React.forwardRef<HTMLDivElement, SpaceProps>((props, ref) => {
   const { wrap, align = 'center', direction = 'horizontal', gap = 0, split, className, style, ...resetProps } = props;
 
   return (
-    <div
-      className={classNames(`space space-${direction}`, className)}
-      style={{ gap: `${gap}px`, '--align': align, ...style, flexWrap: wrap ? 'wrap' : 'nowrap' }}
+    <SpaceContainer
+      className={className}
+      type={direction}
+      style={{ gap: `${gap}px`, alignItems: align, flexWrap: wrap ? 'wrap' : 'nowrap', ...style }}
       {...resetProps}
       ref={ref}
     >
@@ -32,7 +33,7 @@ const Space = React.forwardRef<HTMLDivElement, SpaceProps>((props, ref) => {
           </>
         );
       })}
-    </div>
+    </SpaceContainer>
   );
 });
 

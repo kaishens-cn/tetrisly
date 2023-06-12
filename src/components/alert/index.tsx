@@ -1,14 +1,9 @@
-import './style/index.scss';
-
 import { animated, useSpring } from '@react-spring/web';
 import React, { useState } from 'react';
 import useMeasure from 'react-use-measure';
 
-import { Icon } from '../../index';
-import colorConfig from '../../styles/color.module.scss';
-import Row from '../row';
-import Space from '../space';
-import Typography from '../typography';
+import { ColorConfig, Icon, Row, Space, Typography } from '../../index';
+import { AlertCloseStyle, AlertStyle } from './style';
 
 interface AlertAction {
   text: string;
@@ -27,8 +22,8 @@ const Alert = (props: AlertProps) => {
   const { type = 'normal', closeable, message = '', actions } = props;
   const [open, setOpen] = useState(true);
 
-  const contentColor = type === 'warning' ? colorConfig.ContentPrimary : colorConfig.ContentInvertedPrimary;
-  const actionColor = type === 'warning' ? colorConfig.ActionNeutralNormal : colorConfig.ActionInvertedNormal;
+  const contentColor = type === 'warning' ? ColorConfig.ContentPrimary : ColorConfig.ContentInvertedPrimary;
+  const actionColor = type === 'warning' ? ColorConfig.ActionNeutralNormal : ColorConfig.ActionInvertedNormal;
   let icon = <Icon.InfoCircle fill={contentColor} />;
   if (type === 'warning') {
     icon = <Icon.WarningFill fill={contentColor} />;
@@ -57,7 +52,7 @@ const Alert = (props: AlertProps) => {
 
   return (
     <animated.div style={animationProps}>
-      <Row className={`alert alert-${type}`} ref={ref}>
+      <AlertStyle ref={ref} type={type}>
         <Space gap={16}>
           <Space gap={8}>
             {icon}
@@ -84,8 +79,8 @@ const Alert = (props: AlertProps) => {
             </Space>
           )}
         </Space>
-        {closeable && <Icon.Close fill={actionColor} className="alert-close" onClick={() => setOpen(false)} />}
-      </Row>
+        {closeable && <AlertCloseStyle fill={actionColor} className="alert-close" onClick={() => setOpen(false)} />}
+      </AlertStyle>
     </animated.div>
   );
 };

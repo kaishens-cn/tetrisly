@@ -1,6 +1,3 @@
-@import 'src/styles/elevation';
-@import 'src/styles/color.module';
-
 html,
 body,
 #root {
@@ -10,61 +7,13 @@ body,
   padding: 0;
 }
 
-@mixin elevationDiv() {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-}
-
-.elevation {
-  &-top {
-    &-100 {
-      @include elevationDiv;
-      @include elevation(top, 100);
-    }
-    &-200 {
-      @include elevationDiv;
-      @include elevation(top, 200);
-    }
-    &-300 {
-      @include elevationDiv;
-      @include elevation(top, 300);
-    }
-    &-400 {
-      @include elevationDiv;
-      @include elevation(top, 400);
-    }
-  }
-  &-bottom {
-    &-100 {
-      @include elevationDiv;
-      @include elevation(bottom, 100);
-    }
-    &-200 {
-      @include elevationDiv;
-      @include elevation(bottom, 200);
-    }
-    &-300 {
-      @include elevationDiv;
-      @include elevation(bottom, 300);
-    }
-    &-400 {
-      @include elevationDiv;
-      @include elevation(bottom, 400);
-    }
-  }
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-}
-
 .component {
   width: 280px;
   height: 100%;
-  border-right: 1px solid $color-border-default;
+  border-right: 1px solid #e9ecef;
 }
 
 .component-container {
   padding: 20px;
-  border: 1px solid $color-border-default;
+  border: 1px solid #e9ecef;
 }

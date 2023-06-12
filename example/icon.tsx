@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { colorConfig, Column, Divider, Icon, Row, Space, Typography } from '../src';
+import { ColorConfig, Column, Divider, Icon, Row, Space, Typography } from '../src';
 
 const IconOverview = () => {
   return (
@@ -279,7 +279,7 @@ const IconOverview = () => {
         </Space>
       </Row>
       <Divider title="20 x 20" fillUp />
-      <Typography.Normal size={75} color={colorConfig.ContentSecondary}>
+      <Typography.Normal size={75} color={ColorConfig.ContentSecondary}>
         A clean, consistent, and pixel-perfect icon library crafted especially for modern UI design.
       </Typography.Normal>
     </Column>
