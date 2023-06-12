@@ -5,9 +5,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 import { Column, Divider, Icon, Menu, Row } from '../src';
-import LayerTwo from '../src/components/icon/layer-two';
 import { TrteislyMenu } from '../src/components/type';
-import Typography from '../src/components/typography';
 import IconOverview from './icon';
 
 const Main = () => {
