@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/kaishens-cn/tetrisly/compare/v1.0.1...v1.0.2) (2023-06-12)
+
+
+### CI
+
+* fix pnpm autoInstallPeers ([b0a372e](https://github.com/kaishens-cn/tetrisly/commit/b0a372eb6d4ca2b543feeaadaed8698a2209ef86))
+
 ## [1.0.1](https://github.com/kaishens-cn/tetrisly/compare/v1.0.0...v1.0.1) (2023-06-12)
 
 
