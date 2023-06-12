@@ -13,11 +13,13 @@ const config: webpack.Configuration = {
     filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
     libraryTarget: 'umd',
+    library: '@kaishens.cn/tetrisly',
+    umdNamedDefine: true,
   },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
-  },
+  // externals: {
+  //   react: 'React',
+  //   'react-dom': 'ReactDOM',
+  // },
   module: {
     rules: [
       {

@@ -4,8 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
-import { Column, Divider, Icon, Menu, Row } from '../src';
-import { TrteislyMenu } from '../src/components/type';
+import { Column, Divider, Icon, Menu, Row, TrteislyMenu } from '../src';
 import IconOverview from './icon';
 
 const Main = () => {

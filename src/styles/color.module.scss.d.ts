@@ -121,6 +121,6 @@ export interface ColorScss {
   ActionReverseInvertedSelected: string;
 }
 
-export const colorConfig: ColorScss;
+export let colorConfig: ColorScss;
 
 export default colorConfig;

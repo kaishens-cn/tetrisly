@@ -1,4 +1,4 @@
-import './index.scss';
+import './style/index.scss';
 
 import { animated, useSpring } from '@react-spring/web';
 import { atom, createStore, Provider, useAtom } from 'jotai';

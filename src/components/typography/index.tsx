@@ -1,4 +1,4 @@
-import './index.scss';
+import './style/index.scss';
 
 import classNames from 'classnames';
 import React, { FC } from 'react';

@@ -1,8 +1,6 @@
 import React from 'react';
 
-import { Column, Divider, Icon, Row, Space } from '../src';
-import Typography from '../src/components/typography';
-import colorConfig from '../src/styles/color.module.scss';
+import { colorConfig, Column, Divider, Icon, Row, Space, Typography } from '../src';
 
 const IconOverview = () => {
   return (
