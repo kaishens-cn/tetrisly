@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/kaishens-cn/tetrisly/compare/v1.0.5...v1.0.6) (2023-06-13)
+
+
+### Build System
+
+* fixed stylis type error and add build jobs ([f4fba1e](https://github.com/kaishens-cn/tetrisly/commit/f4fba1e793b2134faa8418a57b2e13f3048b5175))
+
 ## [1.0.5](https://github.com/kaishens-cn/tetrisly/compare/v1.0.4...v1.0.5) (2023-06-13)
 
 
