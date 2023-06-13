@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.5](https://github.com/kaishens-cn/tetrisly/compare/v1.0.4...v1.0.5) (2023-06-13)
+
+
+### Build System
+
+* switch the build tool to gulp and replace sass with styled-components ([c0845ab](https://github.com/kaishens-cn/tetrisly/commit/c0845ab6b8f263566f08488b0766393f8d8086f8))
+
+
+### CI
+
+* change autoInstallPeers to false ([0d45a2a](https://github.com/kaishens-cn/tetrisly/commit/0d45a2a460fe933c6c7fe96aa0dae670de3839d5))
+* update pnpm lockfile ([77efdf1](https://github.com/kaishens-cn/tetrisly/commit/77efdf16143b20e761ae734e6d10b19e9bc5af60))
+* update the pnpm version in workflow ([2c52087](https://github.com/kaishens-cn/tetrisly/commit/2c52087476df9c6b312826136848f4464bcdf1ae))
+
 ## [1.0.4](https://github.com/kaishens-cn/tetrisly/compare/v1.0.3...v1.0.4) (2023-06-12)
 
 
