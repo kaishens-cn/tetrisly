@@ -7,6 +7,6 @@ import Row from './components/row';
 import Space from './components/space';
 import { TrteislyMenu } from './components/type';
 import Typography from './components/typography';
-import colorConfig from './styles/color.module.scss';
+import { ColorConfig } from './styles/color';
 
-export { Alert, colorConfig, Column, Divider, Icon, Menu, Row, Space, TrteislyMenu, Typography };
+export { Alert, ColorConfig, Column, Divider, Icon, Menu, Row, Space, TrteislyMenu, Typography };

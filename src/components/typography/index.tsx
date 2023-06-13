@@ -1,9 +1,7 @@
-import './style/index.scss';
-
-import classNames from 'classnames';
 import React, { FC } from 'react';
 
-import colorConfig from '../../styles/color.module.scss';
+import { ColorConfig } from '../../';
+import { Font } from '../../styles/typography';
 
 interface TypographyProps extends React.HTMLAttributes<HTMLSpanElement> {
   size?: 25 | 50 | 75 | 100 | 200 | 300 | 400 | 500 | 600;
@@ -11,20 +9,24 @@ interface TypographyProps extends React.HTMLAttributes<HTMLSpanElement> {
   color?: string;
 }
 
-const withTypography = (type: string): FC<TypographyProps> => {
+const withTypography = (type: 'strong' | 'medium' | 'normal'): FC<TypographyProps> => {
   return props => {
-    const { size = 25, underline = false, style, color = colorConfig.ContentPrimary, ...resetProps } = props;
+    const { size = 25, underline = false, style, color = ColorConfig.ContentPrimary, ...resetProps } = props;
     return (
-      <div
+      <Font
         style={{
           color: color,
+          textDecorationLine: underline ? 'underline' : 'unset',
+          cursor: underline ? 'pointer' : 'unset',
           ...style,
         }}
-        className={classNames(`font-${type}-${size}${underline ? ' font-underline' : ''}`, props.className)}
+        weight={type}
+        size={`${size}`}
+        className={props.className}
         {...resetProps}
       >
         {props.children}
-      </div>
+      </Font>
     );
   };
 };

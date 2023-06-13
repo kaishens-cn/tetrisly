@@ -1,11 +1,7 @@
-import './style/index.scss';
-
-import classNames from 'classnames';
 import React, { CSSProperties } from 'react';
 
-import colorConfig from '../../styles/color.module.scss';
-import Row from '../row';
-import Typography from '../typography';
+import { ColorConfig, Typography } from '../../';
+import { DividerLineStyle, DividerStyle } from './style';
 
 interface DividerProps {
   title?: string;
@@ -19,25 +15,22 @@ const Divider = (props: DividerProps) => {
   const { type = 'horizontal' } = props;
 
   return (
-    <div
-      className={classNames(
-        'divider',
-        props.title && type !== 'vertical' ? `divider-${type}-with-title` : undefined,
-        props.className
-      )}
+    <DividerStyle
+      className={props.className}
       style={{
+        height: props.title && type !== 'vertical' ? 'auto' : 'unset',
         paddingLeft: props.fillUp ? 0 : 16,
         paddingRight: props.fillUp ? 0 : 16,
         ...props.style,
       }}
     >
       {props.title && type !== 'vertical' && (
-        <Typography.Normal size={75} color={colorConfig.ContentTertiary}>
+        <Typography.Normal size={75} color={ColorConfig.ContentTertiary}>
           {props.title}
         </Typography.Normal>
       )}
-      <div className={`divider-${type}`}></div>
-    </div>
+      <DividerLineStyle type={type} />
+    </DividerStyle>
   );
 };
 

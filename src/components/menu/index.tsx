@@ -1,18 +1,11 @@
-import './style/index.scss';
-
 import { animated, useSpring } from '@react-spring/web';
 import { atom, createStore, Provider, useAtom } from 'jotai';
 import React, { FC, PropsWithChildren, useEffect, useId, useImperativeHandle, useState } from 'react';
 import useMeasure from 'react-use-measure';
 
-import { Icon } from '../../index';
-import colorConfig from '../../styles/color.module.scss';
+import { ColorConfig, Column, Icon, Row, Space, TrteislyMenu, Typography } from '../..';
 import { attachPropertiesToComponent } from '../../utils';
-import Column from '../column';
-import Row from '../row';
-import Space from '../space';
-import { TrteislyMenu } from '../type';
-import Typography from '../typography';
+import { MenuGroup, MenuGroupContent, MenuItem, MenuItemContent } from './style';
 
 const groupSelectKey = atom<string>('');
 const itemSelectKey = atom<string>('');
@@ -52,7 +45,7 @@ export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
   const [ref, { height: viewHeight }] = useMeasure();
   const [open, setOpen] = useState(defaultOpen);
   const [background, setBackground] = useState<string>();
-  const [contentColor, setContentColor] = useState<string>(colorConfig.ActionNeutralNormal);
+  const [contentColor, setContentColor] = useState<string>(ColorConfig.ActionNeutralNormal);
 
   const { height, transform } = useSpring({
     from: { height: 0, transform: 'rotate(0deg)' },
@@ -66,50 +59,49 @@ export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
     console.log(selected);
     if (selected !== id) {
       setBackground(undefined);
-      setContentColor(colorConfig.ActionNeutralNormal);
+      setContentColor(ColorConfig.ActionNeutralNormal);
     } else {
       if (React.Children.count(props.children) > 0) {
-        setBackground(colorConfig.ActionGhostSelected);
-        setContentColor(colorConfig.ActionNeutralSelected);
+        setBackground(ColorConfig.ActionGhostSelected);
+        setContentColor(ColorConfig.ActionNeutralSelected);
         return;
       }
       // When there is no submenu, the group itself is used as the menu
-      setBackground(colorConfig.ActionPrimarySubtleSelected);
-      setContentColor(colorConfig.ActionPrimarySelected);
+      setBackground(ColorConfig.ActionPrimarySubtleSelected);
+      setContentColor(ColorConfig.ActionPrimarySelected);
       setItemSelected('');
     }
   }, [selected]);
 
   return (
     <Column align="flex-start">
-      <Row className="menu-group">
-        <Row
+      <MenuGroup>
+        <MenuGroupContent
           justify="flex-start"
-          className="menu-group-main"
           tabIndex={0}
           onMouseEnter={() => {
             if (selected !== id) {
-              setBackground(colorConfig.ActionGhostHover);
-              setContentColor(colorConfig.ActionNeutralHover);
+              setBackground(ColorConfig.ActionGhostHover);
+              setContentColor(ColorConfig.ActionNeutralHover);
             }
           }}
           onMouseLeave={() => {
             if (selected !== id) {
               setBackground(undefined);
-              setContentColor(colorConfig.ActionNeutralNormal);
+              setContentColor(ColorConfig.ActionNeutralNormal);
             }
           }}
           onClick={() => {
             if (React.Children.count(props.children) > 0) {
-              setBackground(colorConfig.ActionGhostSelected);
-              setContentColor(colorConfig.ActionNeutralSelected);
+              setBackground(ColorConfig.ActionGhostSelected);
+              setContentColor(ColorConfig.ActionNeutralSelected);
               setOpen(!open);
               return;
             }
             setSelected(id);
             // When there is no submenu, the group itself is used as the menu
-            setBackground(colorConfig.ActionPrimarySubtleSelected);
-            setContentColor(colorConfig.ActionPrimarySelected);
+            setBackground(ColorConfig.ActionPrimarySubtleSelected);
+            setContentColor(ColorConfig.ActionPrimarySelected);
             setItemSelected('');
             props.onClick?.();
           }}
@@ -123,7 +115,7 @@ export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
                 width={16}
                 height={16}
                 fill={
-                  React.Children.count(props.children) !== 0 ? colorConfig.ContentTertiary : colorConfig.Transparent
+                  React.Children.count(props.children) !== 0 ? ColorConfig.ContentTertiary : ColorConfig.Transparent
                 }
               />
             </animated.div>
@@ -137,8 +129,8 @@ export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
               </Typography.Medium>
             </Space>
           </Space>
-        </Row>
-      </Row>
+        </MenuGroupContent>
+      </MenuGroup>
       {React.Children.count(props.children) !== 0 && (
         <animated.div style={{ height, overflow: 'hidden' }}>
           <Space direction="vertical" align="start" gap={4} style={{ paddingTop: '4px' }} ref={ref}>
@@ -167,21 +159,20 @@ export const Item: FC<PropsWithChildren<MenuItemProps>> = props => {
   const id = props.menuKey || useId();
 
   const [background, setBackground] = useState<string>();
-  const [contentColor, setContentColor] = useState<string>(colorConfig.ActionNeutralNormal);
+  const [contentColor, setContentColor] = useState<string>(ColorConfig.ActionNeutralNormal);
 
   useEffect(() => {
     if (selected !== id) {
       setBackground(undefined);
-      setContentColor(colorConfig.ActionNeutralNormal);
+      setContentColor(ColorConfig.ActionNeutralNormal);
     } else {
       setGroupSelected(props.groupKey);
     }
   }, [selected]);
 
   return (
-    <Row className="menu-item">
-      <Row
-        className="menu-item-main"
+    <MenuItem>
+      <MenuItemContent
         justify="flex-start"
         style={{
           backgroundColor: background,
@@ -189,29 +180,29 @@ export const Item: FC<PropsWithChildren<MenuItemProps>> = props => {
         tabIndex={0}
         onMouseEnter={() => {
           if (selected !== id) {
-            setBackground(colorConfig.ActionGhostHover);
-            setContentColor(colorConfig.ActionNeutralHover);
+            setBackground(ColorConfig.ActionGhostHover);
+            setContentColor(ColorConfig.ActionNeutralHover);
           }
         }}
         onMouseLeave={() => {
           if (selected !== id) {
             setBackground(undefined);
-            setContentColor(colorConfig.ActionNeutralNormal);
+            setContentColor(ColorConfig.ActionNeutralNormal);
           }
         }}
         onClick={() => {
           setSelected(id);
           // setGroupSelected(props.groupKey);
-          setBackground(colorConfig.ActionPrimarySubtleSelected);
-          setContentColor(colorConfig.ActionPrimarySelected);
+          setBackground(ColorConfig.ActionPrimarySubtleSelected);
+          setContentColor(ColorConfig.ActionPrimarySelected);
           props.onClick?.();
         }}
       >
         <Typography.Medium size={75} color={contentColor}>
           {props.title}
         </Typography.Medium>
-      </Row>
-    </Row>
+      </MenuItemContent>
+    </MenuItem>
   );
 };
 
