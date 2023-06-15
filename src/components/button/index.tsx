@@ -26,19 +26,19 @@ const Button = (props: ButtonProps) => {
       intent={intent}
       size={size}
       {...resetProps}
-      onMouseEnter={e => {
+      onMouseEnter={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         setStatus('hover');
         props.onMouseEnter?.(e);
       }}
-      onMouseLeave={e => {
+      onMouseLeave={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         setStatus('normal');
         props.onMouseLeave?.(e);
       }}
-      onMouseDown={e => {
+      onMouseDown={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         setStatus('press');
         props.onMouseDown?.(e);
       }}
-      onMouseUp={e => {
+      onMouseUp={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         setStatus('hover');
         props.onMouseUp?.(e);
       }}
