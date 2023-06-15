@@ -5,6 +5,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 import { Column, Divider, Icon, Menu, Row, TrteislyMenu } from '../src';
+import ButtonOverview from './button';
 import IconOverview from './icon';
 
 const Main = () => {
@@ -33,11 +34,18 @@ const Main = () => {
           <Menu.Group title="Menu" icon={<Icon.Menu />} />
           <Divider title="Feedback" />
           <Menu.Group title="Alert" icon={<Icon.Alert />} />
+          <Menu.Group
+            menuKey="/button"
+            title="Button"
+            icon={<Icon.ViewLayoutBottom />}
+            onClick={() => navigate('/button')}
+          />
         </Menu>
       </Column>
-      <Column style={{ padding: '40px 64px' }} align="stretch">
+      <Column style={{ padding: '40px 64px', flex: 1 }} align="stretch">
         <Routes>
           <Route path="icon" element={<IconOverview />} />
+          <Route path="button" element={<ButtonOverview />} />
         </Routes>
       </Column>
     </Row>

@@ -3,7 +3,7 @@ import React, { FC } from 'react';
 import { ColorConfig } from '../../';
 import { Font } from '../../styles/typography';
 
-interface TypographyProps extends React.HTMLAttributes<HTMLSpanElement> {
+export interface TypographyProps extends React.HTMLAttributes<HTMLSpanElement> {
   size?: 25 | 50 | 75 | 100 | 200 | 300 | 400 | 500 | 600;
   underline?: boolean;
   color?: string;
