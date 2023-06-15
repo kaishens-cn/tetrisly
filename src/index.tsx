@@ -1,4 +1,5 @@
 import Alert from './components/alert';
+import Button from './components/button';
 import Column from './components/column';
 import Divider from './components/divider';
 import Icon from './components/icon';
@@ -9,4 +10,4 @@ import { TrteislyMenu } from './components/type';
 import Typography from './components/typography';
 import { ColorConfig } from './styles/color';
 
-export { Alert, ColorConfig, Column, Divider, Icon, Menu, Row, Space, TrteislyMenu, Typography };
+export { Alert, Button, ColorConfig, Column, Divider, Icon, Menu, Row, Space, TrteislyMenu, Typography };
