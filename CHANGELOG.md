@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0](https://github.com/kaishens-cn/tetrisly/compare/v1.0.6...v1.1.0) (2023-06-15)
+
+
+### Features
+
+* add button component ([50dd6e2](https://github.com/kaishens-cn/tetrisly/commit/50dd6e28220364990fe7f3a785735d6b9dea9d10))
+* add button of bare type ([b1f1f5a](https://github.com/kaishens-cn/tetrisly/commit/b1f1f5ae426bdb26f557a168f4a3dd7909a9efb8))
+
+
+### Bug Fixes
+
+* fix react event type error ([7ea1219](https://github.com/kaishens-cn/tetrisly/commit/7ea12193c9a8ef33eb4317e7306d0ddbfaeada9e))
+
 ## [1.0.6](https://github.com/kaishens-cn/tetrisly/compare/v1.0.5...v1.0.6) (2023-06-13)
 
 
