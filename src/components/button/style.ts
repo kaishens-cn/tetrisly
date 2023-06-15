@@ -16,19 +16,49 @@ export interface ButtonStyleProps {
 export const ButtonTextStyle = styled(Typography.Medium)<Omit<ButtonStyleProps, 'size'> & TypographyProps>`
   color: ${props => {
     if (props.appearance === 'primary' && props.button !== 'default' && props.intent === 'none') {
+      if (props.status === 'hover') {
+        return ColorConfig.ActionPrimaryHover;
+      }
+      if (props.status === 'press') {
+        return ColorConfig.ActionPrimaryActive;
+      }
       return ColorConfig.ActionPrimaryNormal;
     }
     if (props.appearance === 'primary' && props.button === 'default') {
       return ColorConfig.ActionInvertedNormal;
     }
     if (props.appearance === 'secondary' && props.intent === 'none') {
+      if (props.status === 'hover') {
+        return ColorConfig.ActionNeutralHover;
+      }
+      if (props.status === 'press') {
+        return ColorConfig.ActionNeutralActive;
+      }
       return ColorConfig.ActionNeutralNormal;
     }
     if (props.intent === 'success') {
+      if (props.status === 'hover' && props.button === 'bare') {
+        return ColorConfig.ActionSuccessHover;
+      }
+      if (props.status === 'press' && props.button === 'bare') {
+        return ColorConfig.ActionSuccessActive;
+      }
       return ColorConfig.ActionSuccessNormal;
     }
     if (props.intent === 'danger') {
+      if (props.status === 'hover' && props.button === 'bare') {
+        return ColorConfig.ActionDestructiveHover;
+      }
+      if (props.status === 'press' && props.button === 'bare') {
+        return ColorConfig.ActionDestructiveActive;
+      }
       return ColorConfig.ActionDestructiveNormal;
+    }
+    if (props.status === 'hover' && props.button === 'bare') {
+      return ColorConfig.ActionInvertedHover;
+    }
+    if (props.status === 'press' && props.button === 'bare') {
+      return ColorConfig.ActionInvertedActive;
     }
     return ColorConfig.ActionInvertedNormal;
   }} !important;
@@ -86,7 +116,7 @@ export const ButtonStyle = styled.button<ButtonStyleProps>`
         return ColorConfig.ActionDestructiveNormal;
       }
     }
-    if (props.button === 'ghost' || props.button === 'bare') {
+    if (props.button === 'ghost') {
       if (props.status === 'hover') {
         return ColorConfig.ActionGhostHover;
       }
@@ -95,10 +125,10 @@ export const ButtonStyle = styled.button<ButtonStyleProps>`
       }
       return ColorConfig.Transparent;
     }
-    if (props.status === 'hover') {
+    if (props.status === 'hover' && props.button !== 'bare') {
       return ColorConfig.ActionInvertedHover;
     }
-    if (props.status === 'press') {
+    if (props.status === 'press' && props.button !== 'bare') {
       return ColorConfig.ActionInvertedActive;
     }
     return ColorConfig.ActionInvertedNormal;
@@ -110,6 +140,9 @@ export const ButtonStyle = styled.button<ButtonStyleProps>`
     return '82px';
   }};
   padding: ${props => {
+    if (props.button === 'bare') {
+      return 0;
+    }
     if (props.size === 'normal') {
       return '8px 16px';
     }

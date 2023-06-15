@@ -43,7 +43,13 @@ const Button = (props: ButtonProps) => {
         props.onMouseUp?.(e);
       }}
     >
-      <ButtonTextStyle button={button} appearance={appearance} intent={intent} size={size === 'large' ? 100 : 75}>
+      <ButtonTextStyle
+        status={status}
+        button={button}
+        appearance={appearance}
+        intent={intent}
+        size={size === 'large' ? 100 : 75}
+      >
         {children}
       </ButtonTextStyle>
     </ButtonStyle>

@@ -19,6 +19,7 @@ const ButtonOverview = () => {
         <Button button="ghost" intent="success">
           button label
         </Button>
+        <Button button="bare">button label</Button>
       </Space>
       <Divider title="Button" fillUp />
       <Typography.Normal size={75} color={ColorConfig.ContentSecondary}>
