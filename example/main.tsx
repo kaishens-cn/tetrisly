@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-ro
 import { Column, Divider, Icon, Menu, Row, TrteislyMenu } from '../src';
 import ButtonOverview from './button';
 import IconOverview from './icon';
+import SpinOverview from './spin';
 
 const Main = () => {
   const navigate = useNavigate();
@@ -26,6 +27,12 @@ const Main = () => {
           <Menu.Group menuKey="/icon" title="Icon" icon={<Icon.Apps />} onClick={() => navigate('/icon')} />
           <Menu.Group title="Typography" icon={<Icon.Text />} />
           <Menu.Group title="Elevation" icon={<Icon.LayerTwo />} />
+          <Menu.Group
+            menuKey="/button"
+            title="Button"
+            icon={<Icon.ViewLayoutBottom />}
+            onClick={() => navigate('/button')}
+          />
           <Divider title="Layout" />
           <Menu.Group title="Row" icon={<Icon.DragDropVertical />} />
           <Menu.Group title="Column" icon={<Icon.DragDropHorizontal />} />
@@ -34,18 +41,14 @@ const Main = () => {
           <Menu.Group title="Menu" icon={<Icon.Menu />} />
           <Divider title="Feedback" />
           <Menu.Group title="Alert" icon={<Icon.Alert />} />
-          <Menu.Group
-            menuKey="/button"
-            title="Button"
-            icon={<Icon.ViewLayoutBottom />}
-            onClick={() => navigate('/button')}
-          />
+          <Menu.Group menuKey="/spin" title="Spin" icon={<Icon.MoreHorizontal />} onClick={() => navigate('/spin')} />
         </Menu>
       </Column>
       <Column style={{ padding: '40px 64px', flex: 1 }} align="stretch">
         <Routes>
           <Route path="icon" element={<IconOverview />} />
           <Route path="button" element={<ButtonOverview />} />
+          <Route path="spin" element={<SpinOverview />} />
         </Routes>
       </Column>
     </Row>
