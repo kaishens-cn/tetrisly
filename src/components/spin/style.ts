@@ -16,36 +16,16 @@ const rotate = keyframes`
 
 export const SpinContainer = styled.div<SpinStyleProps>`
   position: relative;
-  width: ${props => {
-    if (typeof props.size === 'number') {
-      return `${props.size}px`;
-    }
-    return props.size || '20px';
-  }};
-  height: ${props => {
-    if (typeof props.size === 'number') {
-      return `${props.size}px`;
-    }
-    return props.size || '20px';
-  }};
+  width: ${props => props.size};
+  height: ${props => props.size};
   animation: ${rotate} 1s infinite linear;
 `;
 
 export const SpinProgress = styled.div<SpinStyleProps>`
   position: relative;
   margin: auto;
-  width: ${props => {
-    if (typeof props.size === 'number') {
-      return `${props.size}px`;
-    }
-    return props.size || '20px';
-  }};
-  height: ${props => {
-    if (typeof props.size === 'number') {
-      return `${props.size}px`;
-    }
-    return props.size || '20px';
-  }};
+  width: ${props => props.size};
+  height: ${props => props.size};
   border-radius: 50%;
   background: conic-gradient(${props => props.color} 50%, #ffffff);
   display: flex;

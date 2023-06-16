@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { SpinCircle, SpinContainer, SpinProgress, SpinStyleProps } from './style';
 
 interface SpinProps extends SpinStyleProps {}
 
 const Spin = (props: SpinProps) => {
-  const { size, color = '#3566D5' } = props;
+  const { color = '#3566D5' } = props;
+  const [size, setSize] = useState<string | number>('20px');
+
+  useEffect(() => {
+    if (typeof props.size === 'number') {
+      setSize(`${props.size}px`);
+    }
+    setSize(props.size || '20px');
+  }, [props.size]);
 
   return (
     <SpinContainer size={size} color={color}>
