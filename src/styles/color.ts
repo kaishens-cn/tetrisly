@@ -557,6 +557,76 @@ const colorActionReverseInvertedHover = colorNeutralAlphaMinus1;
 const colorActionReverseInvertedActive = colorNeutralAlpha0;
 const colorActionReverseInvertedSelected = colorNeutralAlphaMinus1;
 
+// Interaction Color
+const colorInteractionNormal = colorBlue0;
+const colorInteractionHover = colorBlueMinus2;
+const colorInteractionActive = colorBlueMinus3;
+const colorInteractionSelected = colorBlueMinus2;
+const colorInteractionSubtleNormal = colorBlue6;
+const colorInteractionSubtleHover = colorBlue5;
+const colorInteractionSubtleActive = colorBlue3;
+const colorInteractionSubtleSelected = colorBlue5;
+
+const colorInteractionNeutralNormal = colorNeutralMinus1;
+const colorInteractionNeutralHover = colorNeutralMinus2;
+const colorInteractionNeutralActive = colorNeutralMinus3;
+const colorInteractionNeutralSelected = colorNeutralMinus2;
+const colorInteractionNeutralSubtleNormal = colorNeutral6;
+const colorInteractionNeutralSubtleHover = colorNeutral5;
+const colorInteractionNeutralSubtleActive = colorNeutral3;
+const colorInteractionNeutralSubtleSelected = colorNeutral5;
+
+const colorInteractionAlertNormal = colorNegative0;
+const colorInteractionAlertHover = colorNegativeMinus2;
+const colorInteractionAlertActive = colorNegativeMinus3;
+const colorInteractionAlertSelected = colorNegativeMinus2;
+const colorInteractionAlertSubtleNormal = colorNegative6;
+const colorInteractionAlertSubtleHover = colorNegative5;
+const colorInteractionAlertSubtleActive = colorNegative3;
+const colorInteractionAlertSubtleSelected = colorNegative5;
+
+const colorInteractionGhostNormal = colorTransparent;
+const colorInteractionGhostHover = colorNeutralAlpha6;
+const colorInteractionGhostActive = colorNeutralAlpha5;
+const colorInteractionGhostSelected = colorNeutralAlpha6;
+const colorInteractionGhostInvertedNormal = colorWhiteAlphaMinus8;
+const colorInteractionGhostInvertedHover = colorWhiteAlphaMinus7;
+const colorInteractionGhostInvertedActive = colorWhiteAlphaMinus8;
+const colorInteractionGhostDestructiveNormal = colorNegative6;
+const colorInteractionGhostDestructiveHover = colorNegative5;
+const colorInteractionGhostDestructiveActive = colorNegative6;
+
+const colorInteractionDisableNormal = colorNeutral2;
+const colorInteractionDisableHover = colorNeutral1;
+const colorInteractionDisableActive = colorNeutral0;
+const colorInteractionDisableSubtleNormal = colorNeutral5;
+const colorInteractionDisableSubtleHover = colorNeutral4;
+const colorInteractionDisableSubtleActive = colorNeutral3;
+
+const colorInteractionBorderNormal = colorBlue2;
+const colorInteractionBorderHover = colorBlue1;
+const colorInteractionBorderActive = colorBlueMinus1;
+const colorInteractionBorderSelected = colorBlue0;
+const colorInteractionBorderNeutralNormal = colorNeutral3;
+const colorInteractionBorderNeutralHover = colorNeutral2;
+const colorInteractionBorderNeutralActive = colorNeutral1;
+const colorInteractionBorderNeutralSelected = colorNeutral2;
+const colorInteractionBorderAlert = colorNegative1;
+
+const colorInteractionBackgroundModal = colorBackgroundDefault;
+const colorInteractionBackgroundModeless = colorBackgroundDefault;
+const colorInteractionBackgroundModelessInverted = colorBackgroundInverted;
+const colorInteractionBackgroundSidePanel = colorBackgroundDefault;
+const colorInteractionBackgroundFormField = colorBackgroundDefault;
+const colorInteractionBackgroundDimmer = colorNeutralAlpha0;
+
+const colorInteractionInvertedNormal = colorWhiteAlpha0;
+const colorInteractionInvertedHover = colorWhiteAlphaMinus1;
+const colorInteractionInvertedActive = colorWhiteAlphaMinus2;
+const colorInteractionInvertedSelected = colorWhiteAlphaMinus1;
+
+const colorInteractionFocusDefault = colorBlue1;
+
 export const ColorConfig = {
   Transparent: colorTransparent,
   ContentPrimary: colorContentPrimary,
@@ -678,4 +748,64 @@ export const ColorConfig = {
   ActionReverseInvertedHover: colorActionReverseInvertedHover,
   ActionReverseInvertedActive: colorActionReverseInvertedActive,
   ActionReverseInvertedSelected: colorActionReverseInvertedSelected,
+  InteractionNormal: colorInteractionNormal,
+  InteractionHover: colorInteractionHover,
+  InteractionActive: colorInteractionActive,
+  InteractionSelected: colorInteractionSelected,
+  InteractionSubtleNormal: colorInteractionSubtleNormal,
+  InteractionSubtleHover: colorInteractionSubtleHover,
+  InteractionSubtleActive: colorInteractionSubtleActive,
+  InteractionSubtleSelected: colorInteractionSubtleSelected,
+  InteractionNeutralNormal: colorInteractionNeutralNormal,
+  InteractionNeutralHover: colorInteractionNeutralHover,
+  InteractionNeutralActive: colorInteractionNeutralActive,
+  InteractionNeutralSelected: colorInteractionNeutralSelected,
+  InteractionNeutralSubtleNormal: colorInteractionNeutralSubtleNormal,
+  InteractionNeutralSubtleHover: colorInteractionNeutralSubtleHover,
+  InteractionNeutralSubtleActive: colorInteractionNeutralSubtleActive,
+  InteractionNeutralSubtleSelected: colorInteractionNeutralSubtleSelected,
+  InteractionAlertNormal: colorInteractionAlertNormal,
+  InteractionAlertHover: colorInteractionAlertHover,
+  InteractionAlertActive: colorInteractionAlertActive,
+  InteractionAlertSelected: colorInteractionAlertSelected,
+  InteractionAlertSubtleNormal: colorInteractionAlertSubtleNormal,
+  InteractionAlertSubtleHover: colorInteractionAlertSubtleHover,
+  InteractionAlertSubtleActive: colorInteractionAlertSubtleActive,
+  InteractionAlertSubtleSelected: colorInteractionAlertSubtleSelected,
+  InteractionGhostNormal: colorInteractionGhostNormal,
+  InteractionGhostHover: colorInteractionGhostHover,
+  InteractionGhostActive: colorInteractionGhostActive,
+  InteractionGhostSelected: colorInteractionGhostSelected,
+  InteractionGhostInvertedNormal: colorInteractionGhostInvertedNormal,
+  InteractionGhostInvertedHover: colorInteractionGhostInvertedHover,
+  InteractionGhostInvertedActive: colorInteractionGhostInvertedActive,
+  InteractionGhostDestructiveNormal: colorInteractionGhostDestructiveNormal,
+  InteractionGhostDestructiveHover: colorInteractionGhostDestructiveHover,
+  InteractionGhostDestructiveActive: colorInteractionGhostDestructiveActive,
+  InteractionDisableNormal: colorInteractionDisableNormal,
+  InteractionDisableHover: colorInteractionDisableHover,
+  InteractionDisableActive: colorInteractionDisableActive,
+  InteractionDisableSubtleNormal: colorInteractionDisableSubtleNormal,
+  InteractionDisableSubtleHover: colorInteractionDisableSubtleHover,
+  InteractionDisableSubtleActive: colorInteractionDisableSubtleActive,
+  InteractionBorderNormal: colorInteractionBorderNormal,
+  InteractionBorderHover: colorInteractionBorderHover,
+  InteractionBorderActive: colorInteractionBorderActive,
+  InteractionBorderSelected: colorInteractionBorderSelected,
+  InteractionBorderNeutralNormal: colorInteractionBorderNeutralNormal,
+  InteractionBorderNeutralHover: colorInteractionBorderNeutralHover,
+  InteractionBorderNeutralActive: colorInteractionBorderNeutralActive,
+  InteractionBorderNeutralSelected: colorInteractionBorderNeutralSelected,
+  InteractionBorderAlert: colorInteractionBorderAlert,
+  InteractionBackgroundModal: colorInteractionBackgroundModal,
+  InteractionBackgroundModeless: colorInteractionBackgroundModeless,
+  InteractionBackgroundModelessInverted: colorInteractionBackgroundModelessInverted,
+  InteractionBackgroundSidePanel: colorInteractionBackgroundSidePanel,
+  InteractionBackgroundFormField: colorInteractionBackgroundFormField,
+  InteractionBackgroundDimmer: colorInteractionBackgroundDimmer,
+  InteractionInvertedNormal: colorInteractionInvertedNormal,
+  InteractionInvertedHover: colorInteractionInvertedHover,
+  InteractionInvertedActive: colorInteractionInvertedActive,
+  InteractionInvertedSelected: colorInteractionInvertedSelected,
+  InteractionFocusDefault: colorInteractionFocusDefault,
 };
