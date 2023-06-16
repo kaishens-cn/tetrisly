@@ -7,7 +7,6 @@ const paths = {
     esm: 'esm', // ES module 文件存放的目录名 - 暂时不关心
     dist: 'dist', // umd文件存放的目录名 - 暂时不关心
   },
-  styles: 'src/**/*.scss', // 样式文件路径 - 暂时不关心
   scripts: ['src/**/*.{ts,tsx}', '!src/**/demo/*.{ts,tsx}'], // 脚本文件路径
 };
 
