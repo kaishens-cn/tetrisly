@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1](https://github.com/kaishens-cn/tetrisly/compare/v1.1.0...v1.1.1) (2023-06-16)
+
+
+### Build System
+
+* add sass config to dev mode ([3373a0a](https://github.com/kaishens-cn/tetrisly/commit/3373a0a3bb6e3c838c96a2c9bd43f30f80753949))
+* delete sass config ([4a95763](https://github.com/kaishens-cn/tetrisly/commit/4a95763ef45ebaef5d28a5f1b28a3d362cb34fe7))
+* delete sass style path ([358de35](https://github.com/kaishens-cn/tetrisly/commit/358de359b05cd6b6635fcf5e4d5e7051a5231546))
+
 ## [1.1.0](https://github.com/kaishens-cn/tetrisly/compare/v1.0.6...v1.1.0) (2023-06-15)
 
 
