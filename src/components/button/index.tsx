@@ -7,7 +7,7 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement>, Omit<Butt
 const Button = (props: ButtonProps) => {
   const {
     children,
-    inline,
+    inline = true,
     button = 'default',
     appearance = 'primary',
     intent = 'none',

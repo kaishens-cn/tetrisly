@@ -42,15 +42,12 @@ export const SpinCircle = styled.div`
   &::before {
     content: '';
     position: absolute;
-    top: 10%;
-    left: 45%;
-    width: 11%;
-    height: 11%;
+    top: 0;
+    left: 46.5%;
+    width: 10.5%;
+    height: 10.5%;
     border-radius: 50%;
     background: ${props => props.color};
     z-index: 1;
-  }
-  &::before {
-    transform: translate(0, -90%);
   }
 `;

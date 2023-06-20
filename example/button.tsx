@@ -4,7 +4,7 @@ import { Button, ColorConfig, Column, Divider, Space, Typography } from '../src'
 
 const ButtonOverview = () => {
   return (
-    <Column className="component-container" align="unset">
+    <Column className="component-container">
       <Space gap={8} direction="vertical">
         <Button size="large">button label</Button>
         <Button size="normal">button label</Button>

@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-ro
 import { Column, Divider, Icon, Menu, Row, TrteislyMenu } from '../src';
 import ButtonOverview from './button';
 import IconOverview from './icon';
+import ProgressOverview from './progress';
 import SpinOverview from './spin';
 
 const Main = () => {
@@ -42,6 +43,7 @@ const Main = () => {
           <Divider title="Feedback" />
           <Menu.Group title="Alert" icon={<Icon.Alert />} />
           <Menu.Group menuKey="/spin" title="Spin" icon={<Icon.MoreHorizontal />} onClick={() => navigate('/spin')} />
+          <Menu.Group menuKey="/progress" title="Progress" icon={<Icon.Pin />} onClick={() => navigate('/progress')} />
         </Menu>
       </Column>
       <Column style={{ padding: '40px 64px', flex: 1 }} align="stretch">
@@ -49,6 +51,7 @@ const Main = () => {
           <Route path="icon" element={<IconOverview />} />
           <Route path="button" element={<ButtonOverview />} />
           <Route path="spin" element={<SpinOverview />} />
+          <Route path="progress" element={<ProgressOverview />} />
         </Routes>
       </Column>
     </Row>

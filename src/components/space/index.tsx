@@ -12,7 +12,16 @@ interface SpaceProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Space = React.forwardRef<HTMLDivElement, SpaceProps>((props, ref) => {
-  const { wrap, align = 'center', direction = 'horizontal', gap = 0, split, className, style, ...resetProps } = props;
+  const {
+    wrap,
+    align = 'flex-start',
+    direction = 'horizontal',
+    gap = 0,
+    split,
+    className,
+    style,
+    ...resetProps
+  } = props;
 
   return (
     <SpaceContainer
