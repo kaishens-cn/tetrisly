@@ -8,7 +8,7 @@ interface ColumnProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 const Column = React.forwardRef<HTMLDivElement, ColumnProps>((props, ref) => {
-  const { align = 'center', justify = 'center', reverse, style, ...resetProps } = props;
+  const { align = 'unset', justify = 'unset', reverse, style, ...resetProps } = props;
 
   return (
     <div
