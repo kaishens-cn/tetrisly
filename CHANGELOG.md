@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.0](https://github.com/kaishens-cn/tetrisly/compare/v1.2.0...v1.3.0) (2023-06-20)
+
+
+### Features
+
+* add spin component ([2da822e](https://github.com/kaishens-cn/tetrisly/commit/2da822eb7f5aa023923f1866ae1e6acbea895f0e))
+* create progress component ([72286d6](https://github.com/kaishens-cn/tetrisly/commit/72286d6f07787d3d230fd37b1e6eafe26a569eb9))
+
+
+### Bug Fixes
+
+* implement the progress bar and spin component bug ([ad2254e](https://github.com/kaishens-cn/tetrisly/commit/ad2254e3b2857f19880eec37cfc30f98ed97fed7))
+
 ## [1.2.0](https://github.com/kaishens-cn/tetrisly/compare/v1.1.1...v1.2.0) (2023-06-16)
 
 
