@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/kaishens-cn/tetrisly/compare/v1.3.0...v1.3.1) (2023-07-05)
+
+
+### CI
+
+* update end of line 㱇 ([2a6c4e3](https://github.com/kaishens-cn/tetrisly/commit/2a6c4e30b55572f803cac1e9bdfe34b66cf7cc11))
+
 ## [1.3.0](https://github.com/kaishens-cn/tetrisly/compare/v1.2.0...v1.3.0) (2023-06-20)
 
 
