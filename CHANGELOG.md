@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/kaishens-cn/tetrisly/compare/v1.3.1...v1.3.2) (2023-07-06)
+
+
+### Build System
+
+* update npm deps ([70e082c](https://github.com/kaishens-cn/tetrisly/commit/70e082c9e4c0f97de769c43ffd7a19f84923671f))
+
 ## [1.3.1](https://github.com/kaishens-cn/tetrisly/compare/v1.3.0...v1.3.1) (2023-07-05)
 
 
