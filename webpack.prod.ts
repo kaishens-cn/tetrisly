@@ -44,7 +44,7 @@ class GenerateTSDeclaration {
             });
             fs.removeSync('./lib');
           });
-        }
+        },
       );
     });
   }
