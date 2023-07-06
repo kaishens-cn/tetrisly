@@ -47,7 +47,7 @@ const Alert = (props: AlertProps) => {
         }
       },
     },
-    [ref, height]
+    [ref, height],
   );
 
   return (

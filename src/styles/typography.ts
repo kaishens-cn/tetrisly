@@ -41,7 +41,14 @@ interface FontProps {
 }
 
 export const Font = styled.span<FontProps>`
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Tahoma, Arial, 'Hiragino Sans GB', 'Microsoft YaHei',
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    Tahoma,
+    Arial,
+    'Hiragino Sans GB',
+    'Microsoft YaHei',
     sans-serif;
   font-weight: ${props => {
     if (props.weight === 'strong') {
