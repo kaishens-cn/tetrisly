@@ -3,14 +3,14 @@ import { atom, createStore, Provider, useAtom } from 'jotai';
 import React, { FC, PropsWithChildren, useEffect, useId, useImperativeHandle, useState } from 'react';
 import useMeasure from 'react-use-measure';
 
-import { ColorConfig, Column, Icon, Row, Space, TrteislyMenu, Typography } from '../..';
+import { ColorConfig, Column, Icon, Row, Space, TetrislyMenu, Typography } from '../..';
 import { attachPropertiesToComponent } from '../../utils';
 import { MenuGroup, MenuGroupContent, MenuItem, MenuItemContent } from './style';
 
 const groupSelectKey = atom<string>('');
 const itemSelectKey = atom<string>('');
 
-const Menu = React.forwardRef<TrteislyMenu, PropsWithChildren>((props, ref) => {
+const Menu = React.forwardRef<TetrislyMenu, PropsWithChildren>((props, ref) => {
   const store = createStore();
 
   useImperativeHandle(ref, () => ({

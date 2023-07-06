@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
-import { Column, Divider, Icon, Menu, Row, TrteislyMenu } from '../src';
+import { Column, Divider, Icon, Menu, Row, TetrislyMenu } from '../src';
 import ButtonOverview from './button';
 import IconOverview from './icon';
 import ProgressOverview from './progress';
@@ -13,7 +13,7 @@ import SpinOverview from './spin';
 const Main = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const ref = useRef<TrteislyMenu>();
+  const ref = useRef<TetrislyMenu>();
 
   useEffect(() => {
     ref.current.setSelected(location.pathname);
