@@ -10,7 +10,7 @@
     "clean": "rimraf lib esm dist",
     "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
     "build": "pnpm clean && pnpm build:types && gulp",
-    "dev": "NODE_ENV=development webpack serve --history-api-fallback --config webpack.dev.ts",
+    "dev": "cross-env NODE_ENV=development webpack serve --history-api-fallback --config webpack.dev.ts",
     "lint": "eslint --ext .tsx --ext .ts ./ && prettier --check ./",
     "lint:fix": "eslint --ext .tsx --ext .ts ./ --fix && prettier --write ./"
   },
@@ -37,6 +37,7 @@
     "@typescript-eslint/parser": "^5.59.8",
     "clean-webpack-plugin": "^4.0.0",
     "cpr": "^3.0.1",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.8.1",
     "csstype": "^3.1.2",
     "cz-conventional-changelog": "^3.3.0",
