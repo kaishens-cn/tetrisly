@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.3](https://github.com/kaishens-cn/tetrisly/compare/v1.3.2...v1.3.3) (2023-08-30)
+
+
+### Build System
+
+* **deps-dev:** bump semver from 5.7.1 to 5.7.2 ([9886f24](https://github.com/kaishens-cn/tetrisly/commit/9886f2466a233f9fe2e0d7a5a584e1512e733f6e))
+
 ## [1.3.2](https://github.com/kaishens-cn/tetrisly/compare/v1.3.1...v1.3.2) (2023-07-06)
 
 
