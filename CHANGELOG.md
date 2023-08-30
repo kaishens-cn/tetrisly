@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.4](https://github.com/kaishens-cn/tetrisly/compare/v1.3.3...v1.3.4) (2023-08-30)
+
+
+### Bug Fixes
+
+* progress div attribute warnings ([fac8cd4](https://github.com/kaishens-cn/tetrisly/commit/fac8cd4c9decb6e29089ed8ba263d5bd526dfe2d))
+
 ## [1.3.3](https://github.com/kaishens-cn/tetrisly/compare/v1.3.2...v1.3.3) (2023-08-30)
 
 
