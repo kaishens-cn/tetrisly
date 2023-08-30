@@ -3,7 +3,7 @@ import { atom, createStore, Provider, useAtom } from 'jotai';
 import React, { FC, PropsWithChildren, useEffect, useId, useImperativeHandle, useState } from 'react';
 import useMeasure from 'react-use-measure';
 
-import { ColorConfig, Column, Icon, Row, Space, TetrislyMenu, Typography } from '../..';
+import { ColorConfig, Column, Icon, Space, TetrislyMenu, Typography } from '../..';
 import { attachPropertiesToComponent } from '../../utils';
 import { MenuGroup, MenuGroupContent, MenuItem, MenuItemContent } from './style';
 
