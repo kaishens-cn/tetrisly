@@ -2,7 +2,7 @@ import { animated, useSpring } from '@react-spring/web';
 import React, { useState } from 'react';
 import useMeasure from 'react-use-measure';
 
-import { ColorConfig, Icon, Row, Space, Typography } from '../../index';
+import { ColorConfig, Icon, Space, Typography } from '../../index';
 import { AlertCloseStyle, AlertStyle } from './style';
 
 interface AlertAction {

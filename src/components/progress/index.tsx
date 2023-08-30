@@ -1,4 +1,4 @@
-import { animated, useSpring } from '@react-spring/web';
+import { animated } from '@react-spring/web';
 import React from 'react';
 
 import { ProgressBar, ProgressContainer } from './style';
@@ -8,10 +8,11 @@ interface ProgressProps {
 }
 
 const Progress = (props: ProgressProps) => {
+  const { percent } = props;
   return (
-    <ProgressContainer>
-      <animated.div style={{ width: `${props.percent || 0}%` }}>
-        <ProgressBar />
+    <ProgressContainer {...{}}>
+      <animated.div style={{ width: `${percent || 0}%` }}>
+        <ProgressBar {...{}} />
       </animated.div>
     </ProgressContainer>
   );
