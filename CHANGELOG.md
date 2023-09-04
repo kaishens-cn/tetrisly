@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.6](https://github.com/kaishens-cn/tetrisly/compare/v1.3.5...v1.3.6) (2023-09-04)
+
+
+### CI
+
+* update release action ([bab49cb](https://github.com/kaishens-cn/tetrisly/commit/bab49cb69cae67bba95ec834e68f94716d1b792d))
+
 ## [1.3.5](https://github.com/kaishens-cn/tetrisly/compare/v1.3.4...v1.3.5) (2023-09-04)
 
 
