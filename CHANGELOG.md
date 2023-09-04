@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.5](https://github.com/kaishens-cn/tetrisly/compare/v1.3.4...v1.3.5) (2023-09-04)
+
+
+### Bug Fixes
+
+* attributes should be double quoted ([b9e59b1](https://github.com/kaishens-cn/tetrisly/commit/b9e59b105ef42c249517e2170ce963ecc3686bf1))
+* fix vertical centering of menu icon and text ([e125bd1](https://github.com/kaishens-cn/tetrisly/commit/e125bd11801dc16540a00087ab721d058ef103b4))
+
 ## [1.3.4](https://github.com/kaishens-cn/tetrisly/compare/v1.3.3...v1.3.4) (2023-08-30)
 
 
