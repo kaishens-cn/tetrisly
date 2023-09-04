@@ -119,7 +119,7 @@ export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
                 }
               />
             </animated.div>
-            <Space gap={18}>
+            <Space gap={18} align="center">
               {props.icon &&
                 React.cloneElement(props.icon, {
                   fill: contentColor,
