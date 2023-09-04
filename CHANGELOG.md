@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.7](https://github.com/kaishens-cn/tetrisly/compare/v1.3.6...v1.3.7) (2023-09-04)
+
+
+### CI
+
+* update npm upload file ([69d9403](https://github.com/kaishens-cn/tetrisly/commit/69d94039f5c75e647aab71905b1409fadd7be144))
+
 ## [1.3.6](https://github.com/kaishens-cn/tetrisly/compare/v1.3.5...v1.3.6) (2023-09-04)
 
 
