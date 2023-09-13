@@ -5,7 +5,7 @@ import { elevation } from '../../styles/elevation';
 import Typography, { TypographyProps } from '../typography';
 
 export interface ButtonStyleProps {
-  inline?: boolean; // Set whether the button is inline or not
+  inline?: number; // Set whether the button is inline or not
   button?: 'default' | 'ghost' | 'bare';
   appearance?: 'primary' | 'secondary' | 'inverted';
   intent?: 'none' | 'success' | 'danger';

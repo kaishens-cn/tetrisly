@@ -19,7 +19,7 @@ const Button = (props: ButtonProps) => {
 
   return (
     <ButtonStyle
-      inline={inline}
+      inline={inline ? 1 : 0}
       status={status}
       button={button}
       appearance={appearance}
