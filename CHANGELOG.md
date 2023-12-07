@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.8](https://github.com/kaishens-cn/tetrisly/compare/v1.3.7...v1.3.8) (2023-12-07)
+
+
+### Tests
+
+* add test ci ([a489f68](https://github.com/kaishens-cn/tetrisly/commit/a489f68549b6f2e4c0fb9e53aa241352880c6dd4))
+* modify unit tests ([bfb0d7e](https://github.com/kaishens-cn/tetrisly/commit/bfb0d7ebeebcff85e527a213b8b3a9b6fe2c2d4f))
+
 ## [1.3.7](https://github.com/kaishens-cn/tetrisly/compare/v1.3.6...v1.3.7) (2023-09-04)
 
 
