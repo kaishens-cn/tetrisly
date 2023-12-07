@@ -10,9 +10,9 @@ interface ProgressProps {
 const Progress = (props: ProgressProps) => {
   const { percent } = props;
   return (
-    <ProgressContainer {...{}}>
+    <ProgressContainer>
       <animated.div style={{ width: `${percent || 0}%` }}>
-        <ProgressBar {...{}} />
+        <ProgressBar />
       </animated.div>
     </ProgressContainer>
   );
