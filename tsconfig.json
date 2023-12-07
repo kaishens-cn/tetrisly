@@ -5,7 +5,7 @@
     "moduleResolution": "Node",
     "noImplicitAny": true,
     "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+//    "sourceMap": true,
     "module": "CommonJS",
     "target": "ES5",
     "jsx": "react",
@@ -14,16 +14,15 @@
     "resolveJsonModule": true,
     "paths": {
 //      "@/*": ["./*"]
-    }
+    },
   },
   "include": [
     "./src",
-    "./__test__",
+    "./__test__/*",
     "./example",
-    "webpack.dev.ts"
+    "webpack.dev.ts",
+//    "node_modules/@types/",
+//    "node_modules/@testing-library/jest-dom/"
   ],
   "compileOnSave": true,
-  "exclude": [
-    "node_modules",
-  ]
 }
