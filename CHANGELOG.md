@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.10](https://github.com/kaishens-cn/tetrisly/compare/v1.3.9...v1.3.10) (2023-12-14)
+
+
+### Build System
+
+* **deps-dev:** bump @babel/traverse from 7.22.11 to 7.23.6 ([b16bef8](https://github.com/kaishens-cn/tetrisly/commit/b16bef8d9c569d0cfb20f4e0e993e3406a0922d5))
+
 ## [1.3.9](https://github.com/kaishens-cn/tetrisly/compare/v1.3.8...v1.3.9) (2023-12-14)
 
 
