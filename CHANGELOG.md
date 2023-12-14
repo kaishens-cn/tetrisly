@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.9](https://github.com/kaishens-cn/tetrisly/compare/v1.3.8...v1.3.9) (2023-12-14)
+
+
+### Bug Fixes
+
+* Fix type export syntax ([5c68b47](https://github.com/kaishens-cn/tetrisly/commit/5c68b470ae69b853f4fa31906474272c5f0e630c))
+
 ## [1.3.8](https://github.com/kaishens-cn/tetrisly/compare/v1.3.7...v1.3.8) (2023-12-07)
 
 
