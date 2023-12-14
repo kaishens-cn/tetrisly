@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.11](https://github.com/kaishens-cn/tetrisly/compare/v1.3.10...v1.3.11) (2023-12-14)
+
+
+### Bug Fixes
+
+* Fix the issue of the collapse/expand icon not being centered in the menu component. ([2c62016](https://github.com/kaishens-cn/tetrisly/commit/2c6201637c63361a8dac74f2cd503f0e90f9b434))
+
 ## [1.3.10](https://github.com/kaishens-cn/tetrisly/compare/v1.3.9...v1.3.10) (2023-12-14)
 
 
