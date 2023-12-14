@@ -8,7 +8,7 @@ import Progress from './components/progress';
 import Row from './components/row';
 import Space from './components/space';
 import Spin from './components/spin';
-import { TetrislyMenu } from './components/type';
+import type { TetrislyMenu } from './components/type';
 import Typography from './components/typography';
 import { ColorConfig } from './styles/color';
 

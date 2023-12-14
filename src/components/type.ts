@@ -1,3 +1,3 @@
-export type TetrislyMenu = {
+export interface TetrislyMenu {
   setSelected: (key: string) => void;
-};
+}
