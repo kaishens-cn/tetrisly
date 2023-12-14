@@ -109,7 +109,7 @@ export const Group: FC<PropsWithChildren<MenuGroupProps>> = props => {
             backgroundColor: background,
           }}
         >
-          <Space gap={2}>
+          <Space gap={2} align="center">
             <animated.div style={{ transform, transformOrigin: 'center', display: 'inline-flex' }}>
               <Icon.ArrowheadRight
                 width={16}
