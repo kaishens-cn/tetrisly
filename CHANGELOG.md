@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.12](https://github.com/kaishens-cn/tetrisly/compare/v1.3.11...v1.3.12) (2024-01-17)
+
+
+### Build System
+
+* **deps-dev:** bump follow-redirects from 1.15.2 to 1.15.5 ([19239b0](https://github.com/kaishens-cn/tetrisly/commit/19239b0822c411cb2520ffbdf33a88dc2cee1043))
+
 ## [1.3.11](https://github.com/kaishens-cn/tetrisly/compare/v1.3.10...v1.3.11) (2023-12-14)
 
 
