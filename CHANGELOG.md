@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.3.14](https://github.com/kaishens-cn/tetrisly/compare/v1.3.13...v1.3.14) (2024-03-27)
+
+
+### Build System
+
+* **deps-dev:** bump follow-redirects from 1.15.5 to 1.15.6 ([278a29c](https://github.com/kaishens-cn/tetrisly/commit/278a29cbf76ee9fe90c7ae1146a2b31677bffc4e))
+* **deps-dev:** bump webpack-dev-middleware from 5.3.3 to 5.3.4 ([3a73d76](https://github.com/kaishens-cn/tetrisly/commit/3a73d7688149467d76484af36b4455bab5e7113f))
+
 ## [1.3.13](https://github.com/kaishens-cn/tetrisly/compare/v1.3.12...v1.3.13) (2024-03-07)
 
 
