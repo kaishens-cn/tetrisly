@@ -197,6 +197,7 @@ import Redo from './redo';
 import Refresh from './refresh';
 import Repeat from './repeat';
 import Reply from './reply';
+import Scale from './scale';
 import Search from './search';
 import Settings from './settings';
 import Share from './share';
@@ -467,6 +468,7 @@ export default {
   Refresh,
   Repeat,
   Reply,
+  Scale,
   Search,
   Settings,
   Share,

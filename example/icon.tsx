@@ -178,6 +178,8 @@ const IconOverview = () => {
           <Icon.Message />
           <Icon.Mic />
           <Icon.Minus />
+          <Icon.Scale />
+          <Icon.Close />
           <Icon.Mobile />
           <Icon.MoreHorizontal />
           <Icon.MoreVertical />
@@ -206,6 +208,7 @@ const IconOverview = () => {
           <Icon.Refresh />
           <Icon.Repeat />
           <Icon.Reply />
+          <Icon.Scale />
           <Icon.Search />
           <Icon.Settings />
           <Icon.Share />

@@ -16,7 +16,7 @@ describe('Icon', () => {
             <svg
               fill="none"
               height="20"
-              viewBox="0 0 20 20"
+              viewBox="${name === 'Scale' ? '0 0 1024 1024' : '0 0 20 20'}"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -40,7 +40,7 @@ describe('Icon', () => {
             <svg
               fill="none"
               height="200"
-              viewBox="0 0 20 20"
+              viewBox="${name === 'Scale' ? '0 0 1024 1024' : '0 0 20 20'}"
               width="200"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -64,7 +64,7 @@ describe('Icon', () => {
             <svg
               fill="none"
               height="20"
-              viewBox="0 0 20 20"
+              viewBox="${name === 'Scale' ? '0 0 1024 1024' : '0 0 20 20'}"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
