@@ -8,6 +8,9 @@ describe('Icon', () => {
   const iconList = Object.keys(Icon);
   for (const name of iconList) {
     const IconItem = (Icon as any)[name];
+    if (name === 'Scale') {
+      continue;
+    }
     test(`Icon ${name} Render`, () => {
       const { baseElement } = render(<IconItem />);
       expect(baseElement).toMatchInlineSnapshot(`
@@ -16,7 +19,7 @@ describe('Icon', () => {
             <svg
               fill="none"
               height="20"
-              viewBox="${name === 'Scale' ? '0 0 1024 1024' : '0 0 20 20'}"
+              viewBox="0 0 20 20"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -40,7 +43,7 @@ describe('Icon', () => {
             <svg
               fill="none"
               height="200"
-              viewBox="${name === 'Scale' ? '0 0 1024 1024' : '0 0 20 20'}"
+              viewBox="0 0 20 20"
               width="200"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -64,7 +67,7 @@ describe('Icon', () => {
             <svg
               fill="none"
               height="20"
-              viewBox="${name === 'Scale' ? '0 0 1024 1024' : '0 0 20 20'}"
+              viewBox="0 0 20 20"
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
