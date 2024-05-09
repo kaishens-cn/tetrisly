@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.1](https://github.com/kaishens-cn/tetrisly/compare/v1.4.0...v1.4.1) (2024-05-09)
+
+
+### Bug Fixes
+
+* updates to the scale icon ([d43e9dd](https://github.com/kaishens-cn/tetrisly/commit/d43e9ddf4084c2e3dba6cec7a9635c85411a9ac2))
+
 ## [1.4.0](https://github.com/kaishens-cn/tetrisly/compare/v1.3.14...v1.4.0) (2024-05-09)
 
 
