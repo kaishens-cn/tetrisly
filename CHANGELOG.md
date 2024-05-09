@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/kaishens-cn/tetrisly/compare/v1.3.14...v1.4.0) (2024-05-09)
+
+
+### Features
+
+* 增加Scale图标 ([eaac0e9](https://github.com/kaishens-cn/tetrisly/commit/eaac0e9bdaa96b80e5e03357ebdfc182e92f118f))
+
+
+### Tests
+
+* change icon tests ([5245d87](https://github.com/kaishens-cn/tetrisly/commit/5245d87d4a70611219377887d3a512684eb7584b))
+
 ## [1.3.14](https://github.com/kaishens-cn/tetrisly/compare/v1.3.13...v1.3.14) (2024-03-27)
 
 
