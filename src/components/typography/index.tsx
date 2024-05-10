@@ -1,3 +1,4 @@
+import type { Property } from 'csstype';
 import React, { FC } from 'react';
 
 import { ColorConfig } from '../../';
@@ -7,6 +8,7 @@ export interface TypographyProps extends React.HTMLAttributes<HTMLSpanElement> {
   size?: 25 | 50 | 75 | 100 | 200 | 300 | 400 | 500 | 600;
   underline?: boolean;
   color?: string;
+  userSelect?: Property.UserSelect;
 }
 
 const withTypography = (type: 'strong' | 'medium' | 'normal'): FC<TypographyProps> => {
@@ -18,6 +20,7 @@ const withTypography = (type: 'strong' | 'medium' | 'normal'): FC<TypographyProp
           color: color,
           textDecorationLine: underline ? 'underline' : 'unset',
           cursor: underline ? 'pointer' : 'unset',
+          userSelect: props.userSelect || 'auto',
           ...style,
         }}
         weight={type}
