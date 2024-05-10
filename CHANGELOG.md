@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.3](https://github.com/kaishens-cn/tetrisly/compare/v1.4.2...v1.4.3) (2024-05-10)
+
+
+### Bug Fixes
+
+* change csstype import ([1b0569a](https://github.com/kaishens-cn/tetrisly/commit/1b0569a711f0bb5c08a136b24c963891191a29c4))
+
 ## [1.4.2](https://github.com/kaishens-cn/tetrisly/compare/v1.4.1...v1.4.2) (2024-05-10)
 
 
