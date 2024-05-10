@@ -14,7 +14,7 @@ const Scale = (props: React.SVGAttributes<SVGElement>) => {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="m14.56,15.5H5.44c-.52,0-.94-.42-.94-.94V5.44c0-.52.42-.94.94-.94h9.11c.52,0,.94.42.94.94v9.11c0,.52-.42.94-.94.94Z"
+        d="m13.81,14.75h-7.61c-.52,0-.94-.42-.94-.94v-7.61c0-.52.42-.94.94-.94h7.61c.52,0,.94.42.94.94v7.61c0,.52-.42.94-.94.94Z"
         stroke={fill}
         strokeWidth={1.5}
       />
