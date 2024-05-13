@@ -9,6 +9,7 @@ import ButtonOverview from './button';
 import IconOverview from './icon';
 import ProgressOverview from './progress';
 import SpinOverview from './spin';
+import TreeOverview from './tree';
 
 const Main = () => {
   const navigate = useNavigate();
@@ -44,6 +45,7 @@ const Main = () => {
           <Menu.Group title="Alert" icon={<Icon.Alert />} />
           <Menu.Group menuKey="/spin" title="Spin" icon={<Icon.MoreHorizontal />} onClick={() => navigate('/spin')} />
           <Menu.Group menuKey="/progress" title="Progress" icon={<Icon.Pin />} onClick={() => navigate('/progress')} />
+          <Menu.Group menuKey="/tree" title="Tree" icon={<Icon.Tree />} onClick={() => navigate('/tree')} />
         </Menu>
       </Column>
       <Column style={{ padding: '40px 64px', flex: 1 }} align="stretch">
@@ -52,6 +54,7 @@ const Main = () => {
           <Route path="button" element={<ButtonOverview />} />
           <Route path="spin" element={<SpinOverview />} />
           <Route path="progress" element={<ProgressOverview />} />
+          <Route path="tree" element={<TreeOverview />} />
         </Routes>
       </Column>
     </Row>
