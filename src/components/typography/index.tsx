@@ -4,8 +4,10 @@ import React, { FC } from 'react';
 import { ColorConfig } from '../../';
 import { Font } from '../../styles/typography';
 
+export type TypographySize = 25 | 50 | 75 | 100 | 200 | 300 | 400 | 500 | 600;
+
 export interface TypographyProps extends React.HTMLAttributes<HTMLSpanElement> {
-  size?: 25 | 50 | 75 | 100 | 200 | 300 | 400 | 500 | 600;
+  size?: TypographySize;
   underline?: boolean;
   color?: string;
   userSelect?: Property.UserSelect;
@@ -24,7 +26,7 @@ const withTypography = (type: 'strong' | 'medium' | 'normal'): FC<TypographyProp
           ...style,
         }}
         weight={type}
-        size={`${size}`}
+        size={size}
         className={props.className}
         {...resetProps}
       >

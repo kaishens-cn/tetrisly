@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const gulpWebpack = require('webpack-stream');
 const through2 = require('through2');
 const fs = require('fs');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const paths = {
   dest: {
@@ -60,6 +61,19 @@ function compileUMD() {
               name: 'tetrislyJS',
             },
           },
+          module: {
+            rules: [
+              {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+              },
+            ],
+          },
+          plugins: [
+            new MiniCssExtractPlugin({
+              filename: 'tetrisly.production.min.css',
+            }),
+          ],
           mode: 'production',
         },
         webpack,

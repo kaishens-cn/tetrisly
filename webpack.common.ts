@@ -34,6 +34,10 @@ const config: webpack.Configuration = {
         },
       },
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.s[ac]ss$/i,
         use: [
           // 提取到单独的CSS文件
