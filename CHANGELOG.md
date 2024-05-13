@@ -1,5 +1,67 @@
 # Changelog
 
+## [1.4.3](https://github.com/kaishens-cn/tetrisly/compare/v1.4.2...v1.4.3) (2024-05-10)
+
+
+### Bug Fixes
+
+* change csstype import ([1b0569a](https://github.com/kaishens-cn/tetrisly/commit/1b0569a711f0bb5c08a136b24c963891191a29c4))
+
+## [1.4.2](https://github.com/kaishens-cn/tetrisly/compare/v1.4.1...v1.4.2) (2024-05-10)
+
+
+### Bug Fixes
+
+* updates to the scale icon ([37730da](https://github.com/kaishens-cn/tetrisly/commit/37730da18771f1faa1d4c193621b3eb0c97d17b4))
+
+## [1.4.1](https://github.com/kaishens-cn/tetrisly/compare/v1.4.0...v1.4.1) (2024-05-09)
+
+
+### Bug Fixes
+
+* updates to the scale icon ([d43e9dd](https://github.com/kaishens-cn/tetrisly/commit/d43e9ddf4084c2e3dba6cec7a9635c85411a9ac2))
+
+## [1.4.0](https://github.com/kaishens-cn/tetrisly/compare/v1.3.14...v1.4.0) (2024-05-09)
+
+
+### Features
+
+* 增加Scale图标 ([eaac0e9](https://github.com/kaishens-cn/tetrisly/commit/eaac0e9bdaa96b80e5e03357ebdfc182e92f118f))
+
+
+### Tests
+
+* change icon tests ([5245d87](https://github.com/kaishens-cn/tetrisly/commit/5245d87d4a70611219377887d3a512684eb7584b))
+
+## [1.3.14](https://github.com/kaishens-cn/tetrisly/compare/v1.3.13...v1.3.14) (2024-03-27)
+
+
+### Build System
+
+* **deps-dev:** bump follow-redirects from 1.15.5 to 1.15.6 ([278a29c](https://github.com/kaishens-cn/tetrisly/commit/278a29cbf76ee9fe90c7ae1146a2b31677bffc4e))
+* **deps-dev:** bump webpack-dev-middleware from 5.3.3 to 5.3.4 ([3a73d76](https://github.com/kaishens-cn/tetrisly/commit/3a73d7688149467d76484af36b4455bab5e7113f))
+
+## [1.3.13](https://github.com/kaishens-cn/tetrisly/compare/v1.3.12...v1.3.13) (2024-03-07)
+
+
+### Build System
+
+* **deps-dev:** bump @adobe/css-tools from 4.3.1 to 4.3.2 ([57ca107](https://github.com/kaishens-cn/tetrisly/commit/57ca107f18dd8ef270bf2ce28405dcfdd5e1d6a6))
+
+## [1.3.12](https://github.com/kaishens-cn/tetrisly/compare/v1.3.11...v1.3.12) (2024-01-17)
+
+
+### Build System
+
+* **deps-dev:** bump follow-redirects from 1.15.2 to 1.15.5 ([19239b0](https://github.com/kaishens-cn/tetrisly/commit/19239b0822c411cb2520ffbdf33a88dc2cee1043))
+
+## [1.3.11](https://github.com/kaishens-cn/tetrisly/compare/v1.3.10...v1.3.11) (2023-12-14)
+
+
+### Bug Fixes
+
+* Fix the issue of the collapse/expand icon not being centered in the menu component. ([2c62016](https://github.com/kaishens-cn/tetrisly/commit/2c6201637c63361a8dac74f2cd503f0e90f9b434))
+
 ## [1.3.10](https://github.com/kaishens-cn/tetrisly/compare/v1.3.9...v1.3.10) (2023-12-14)
 
 
