@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/kaishens-cn/tetrisly/compare/v1.4.3...v1.5.0) (2024-05-13)
+
+
+### Features
+
+* add tree component ([aaf47d3](https://github.com/kaishens-cn/tetrisly/commit/aaf47d3cb5494332f6e080fb1ebc96125029e2c2))
+
 ## [1.4.3](https://github.com/kaishens-cn/tetrisly/compare/v1.4.2...v1.4.3) (2024-05-10)
 
 
