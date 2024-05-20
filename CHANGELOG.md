@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.5.2](https://github.com/kaishens-cn/tetrisly/compare/v1.5.1...v1.5.2) (2024-05-20)
+
+
+### Bug Fixes
+
+* Add the shouldForwardProp setting of styled-components ([06b9edc](https://github.com/kaishens-cn/tetrisly/commit/06b9edc04b3f53e7182463f310974244e73ca1dc))
+* Modify the test case of the button component. ([2264bdd](https://github.com/kaishens-cn/tetrisly/commit/2264bdde064b2da80619a8b34e4c79fb63a291d6))
+
 ## [1.5.1](https://github.com/kaishens-cn/tetrisly/compare/v1.5.0...v1.5.1) (2024-05-20)
 
 
