@@ -9,7 +9,9 @@ interface TreeNodeRowProps {
   status: HandleStatus;
 }
 
-export const TreeNodeRow = styled.div<TreeNodeRowProps>`
+export const TreeNodeRow = styled.div.withConfig({
+  shouldForwardProp: prop => !['nodeLevel'].includes(prop),
+})<TreeNodeRowProps>`
   position: relative;
   padding-left: ${props => {
     return `${props.nodeLevel * 10}px`;

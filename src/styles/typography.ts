@@ -104,7 +104,9 @@ export const getFontHeight = (size: TypographySize) => {
   return fontLineHeight75;
 };
 
-export const Font = styled.span<FontProps>`
+export const Font = styled.span.withConfig({
+  shouldForwardProp: prop => !['select'].includes(prop),
+})<FontProps>`
   font-family:
     Inter,
     -apple-system,
