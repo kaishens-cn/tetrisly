@@ -13,7 +13,9 @@ export interface ButtonStyleProps {
   status?: 'normal' | 'hover' | 'press';
 }
 
-export const ButtonTextStyle = styled(Typography.Medium)<Omit<ButtonStyleProps, 'size'> & TypographyProps>`
+export const ButtonTextStyle = styled(Typography.Medium).withConfig({
+  shouldForwardProp: prop => !['inline', 'status', 'button', 'appearance', 'intent'].includes(prop),
+})<Omit<ButtonStyleProps, 'size'> & TypographyProps>`
   color: ${props => {
     if (props.appearance === 'primary' && props.button !== 'default' && props.intent === 'none') {
       if (props.status === 'hover') {
@@ -64,7 +66,9 @@ export const ButtonTextStyle = styled(Typography.Medium)<Omit<ButtonStyleProps, 
   }} !important;
 `;
 
-export const ButtonStyle = styled.button<ButtonStyleProps>`
+export const ButtonStyle = styled.button.withConfig({
+  shouldForwardProp: prop => !['inline', 'status', 'button', 'appearance', 'intent'].includes(prop),
+})<ButtonStyleProps>`
   outline: none;
   display: ${props => {
     if (props.inline) {
