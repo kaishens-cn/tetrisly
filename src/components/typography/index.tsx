@@ -10,7 +10,7 @@ export interface TypographyProps extends React.HTMLAttributes<HTMLSpanElement> {
   size?: TypographySize;
   underline?: boolean;
   color?: string;
-  userSelect?: Property.UserSelect;
+  select?: Property.UserSelect;
 }
 
 const withTypography = (type: 'strong' | 'medium' | 'normal'): FC<TypographyProps> => {
@@ -22,7 +22,7 @@ const withTypography = (type: 'strong' | 'medium' | 'normal'): FC<TypographyProp
           color: color,
           textDecorationLine: underline ? 'underline' : 'unset',
           cursor: underline ? 'pointer' : 'unset',
-          userSelect: props.userSelect || 'auto',
+          userSelect: props.select || 'auto',
           ...style,
         }}
         weight={type}
