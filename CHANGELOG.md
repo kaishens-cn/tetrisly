@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/kaishens-cn/tetrisly/compare/v1.5.3...v1.6.0) (2024-05-28)
+
+
+### Features
+
+* add input component ([6a945dc](https://github.com/kaishens-cn/tetrisly/commit/6a945dcb186473786c6945062b1c64e1b183098c))
+
 ## [1.5.3](https://github.com/kaishens-cn/tetrisly/compare/v1.5.2...v1.5.3) (2024-05-28)
 
 
