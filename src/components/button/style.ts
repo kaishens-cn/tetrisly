@@ -138,10 +138,11 @@ export const ButtonStyle = styled.button.withConfig({
     return ColorConfig.ActionInvertedNormal;
   }};
   min-width: ${props => {
-    if (props.size === 'large') {
-      return '94px';
-    }
-    return '82px';
+    return 'unset';
+    // if (props.size === 'large') {
+    //   return '94px';
+    // }
+    // return '82px';
   }};
   padding: ${props => {
     if (props.button === 'bare') {
