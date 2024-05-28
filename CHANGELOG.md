@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.3](https://github.com/kaishens-cn/tetrisly/compare/v1.5.2...v1.5.3) (2024-05-28)
+
+
+### Bug Fixes
+
+* delete button min-width ([9b4eaee](https://github.com/kaishens-cn/tetrisly/commit/9b4eaee95c9c4f76ff361c980ed66d1c4215c0b4))
+
 ## [1.5.2](https://github.com/kaishens-cn/tetrisly/compare/v1.5.1...v1.5.2) (2024-05-20)
 
 
