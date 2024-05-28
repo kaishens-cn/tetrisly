@@ -3,6 +3,7 @@ import Button from './components/button';
 import Column from './components/column';
 import Divider from './components/divider';
 import Icon from './components/icon';
+import Input from './components/input';
 import Menu from './components/menu';
 import Progress from './components/progress';
 import Row from './components/row';
@@ -20,6 +21,7 @@ export {
   Column,
   Divider,
   Icon,
+  Input,
   Menu,
   Progress,
   Row,
