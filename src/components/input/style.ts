@@ -22,8 +22,13 @@ export const InputStyle = styled.input`
   }
 `;
 
-export const InputContainer = styled(Row)`
-  padding: 8px 16px;
+export const InputContainer = styled(Row)<{ size: 'normal' | 'small' }>`
+  padding: ${props => {
+    if (props.size === 'small') {
+      return `4px 8px`;
+    }
+    return `8px 16px`;
+  }};
   border: 0 solid #000;
   border-radius: 8px;
   cursor: text;
