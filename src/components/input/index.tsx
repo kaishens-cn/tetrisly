@@ -5,10 +5,10 @@ import { After, InputContainer, InputStyle, Prefix } from './style';
 interface InputProps {
   prefix?: React.ReactNode;
   after?: React.ReactNode;
-  size?: 'normal' | 'small';
+  size?: 'normal' | 'small' | 'large';
 }
 
-const Input = (props: InputProps & React.HTMLAttributes<HTMLInputElement>) => {
+const Input = (props: Omit<Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size'>, 'prefix'> & InputProps) => {
   const { prefix, after, size, ...resetProps } = props;
 
   return (
