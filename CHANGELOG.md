@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.2](https://github.com/kaishens-cn/tetrisly/compare/v1.6.1...v1.6.2) (2024-05-29)
+
+
+### Bug Fixes
+
+* Fix props and size styles for inputs. ([8b3e091](https://github.com/kaishens-cn/tetrisly/commit/8b3e09196173a5c262f7b471be0d48454b96b80b))
+
 ## [1.6.1](https://github.com/kaishens-cn/tetrisly/compare/v1.6.0...v1.6.1) (2024-05-29)
 
 
