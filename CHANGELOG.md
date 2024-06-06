@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.4](https://github.com/kaishens-cn/tetrisly/compare/v1.6.3...v1.6.4) (2024-06-06)
+
+
+### Bug Fixes
+
+* add export TreeNode Type ([6368761](https://github.com/kaishens-cn/tetrisly/commit/63687610b7e85e4e51b1b3738435ab462190e17e))
+
 ## [1.6.3](https://github.com/kaishens-cn/tetrisly/compare/v1.6.2...v1.6.3) (2024-06-06)
 
 
