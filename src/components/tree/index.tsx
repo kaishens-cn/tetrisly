@@ -117,7 +117,7 @@ type Node = {
   prefix?: ReactNode;
   index: number;
 };
-type TreeNode = { label: string; id: string; children?: TreeNode[]; prefix?: ReactNode };
+export type TreeNode = { label: string; id: string; children?: TreeNode[]; prefix?: ReactNode };
 
 interface TreeProps {
   data: TreeNode[];
