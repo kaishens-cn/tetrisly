@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.3](https://github.com/kaishens-cn/tetrisly/compare/v1.6.2...v1.6.3) (2024-06-06)
+
+
+### Bug Fixes
+
+* change props.data line ([0a572c5](https://github.com/kaishens-cn/tetrisly/commit/0a572c5cb5f8dd99f1de2ab8bcda23d2211a7ae4))
+
 ## [1.6.2](https://github.com/kaishens-cn/tetrisly/compare/v1.6.1...v1.6.2) (2024-05-29)
 
 
