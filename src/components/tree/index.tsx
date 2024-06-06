@@ -125,7 +125,7 @@ interface TreeProps {
   defaultExpandedKeys?: string[];
   width?: string | number;
   height?: string | number;
-  dataCallback?: () => void; // props.data刷新成功的回调
+  dataCallback?: () => void; // props.data refresh callback
 }
 
 type OpenNode = { [id: string]: boolean };
