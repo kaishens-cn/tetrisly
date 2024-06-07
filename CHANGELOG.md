@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.5](https://github.com/kaishens-cn/tetrisly/compare/v1.6.4...v1.6.5) (2024-06-07)
+
+
+### Bug Fixes
+
+* export ColumnProps ([243f792](https://github.com/kaishens-cn/tetrisly/commit/243f792520c1a2cfb7e524d00694516f869f39ca))
+
 ## [1.6.4](https://github.com/kaishens-cn/tetrisly/compare/v1.6.3...v1.6.4) (2024-06-06)
 
 
