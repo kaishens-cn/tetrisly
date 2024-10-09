@@ -1,7 +1,7 @@
 import * as childProcess from 'child_process';
-import * as fs from 'fs-extra';
 import * as path from 'path';
 import * as util from 'util';
+import * as fs from 'fs-extra';
 import { Compiler } from 'webpack';
 import { merge } from 'webpack-merge';
 

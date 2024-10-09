@@ -1,6 +1,6 @@
+import * as path from 'path';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import * as path from 'path';
 import * as webpack from 'webpack';
 
 const config: webpack.Configuration = {
@@ -16,10 +16,10 @@ const config: webpack.Configuration = {
     library: '@kaishens.cn/tetrisly',
     umdNamedDefine: true,
   },
-  // externals: {
-  //   react: 'React',
-  //   'react-dom': 'ReactDOM',
-  // },
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
+  },
   module: {
     rules: [
       {

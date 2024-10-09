@@ -1,5 +1,5 @@
 import { animated, useSpring } from '@react-spring/web';
-import { atom, createStore, Provider, useAtom } from 'jotai';
+import { Provider, atom, createStore, useAtom } from 'jotai';
 import React, { FC, PropsWithChildren, useEffect, useId, useImperativeHandle, useState } from 'react';
 import useMeasure from 'react-use-measure';
 
